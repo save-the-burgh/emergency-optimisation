@@ -13,7 +13,8 @@
         },
         "full_address": "51 Little France Crescent, Little France, Edinburgh, EH16 4SA",
         "category": "hospital",
-        "type": "General Acute"
+        "type": "General Acute",
+        "max_capacity": 10
       },
       {
         "id": "H002",
@@ -27,7 +28,8 @@
         },
         "full_address": "Crewe Road South, Craigleith, Edinburgh, EH4 2XU",
         "category": "hospital",
-        "type": "General Acute"
+        "type": "General Acute",
+        "max_capacity": 20
       },
       {
         "id": "H003",
@@ -41,7 +43,8 @@
         },
         "full_address": "50 Little France Crescent, Little France, Edinburgh, EH16 4TJ",
         "category": "hospital",
-        "type": "Paediatric"
+        "type": "Paediatric",
+        "max_capacity": 16
       },
       {
         "id": "H004",
@@ -55,7 +58,8 @@
         },
         "full_address": "Morningside Place, Morningside, Edinburgh, EH10 5HF",
         "category": "hospital",
-        "type": "Mental Health"
+        "type": "Mental Health",
+        "max_capacity": 8
       },
       {
         "id": "H005",
@@ -69,7 +73,8 @@
         },
         "full_address": "Howden Road West, Howden, Livingston, EH54 6PP",
         "category": "hospital",
-        "type": "General Acute"
+        "type": "General Acute",
+        "max_capacity": 18
       }
     ],
     "fire_services": [
@@ -85,7 +90,8 @@
         },
         "full_address": "7 Lauriston Place, Tollcross, Edinburgh, EH3 9DF",
         "category": "fire_service",
-        "type": "Community Fire Station"
+        "type": "Community Fire Station",
+        "max_capacity": 3
       },
       {
         "id": "F002",
@@ -99,7 +105,8 @@
         },
         "full_address": "McDonald Road, Broughton, Edinburgh, EH7 4LX",
         "category": "fire_service",
-        "type": "Community Fire Station"
+        "type": "Community Fire Station",
+        "max_capacity": 4
       },
       {
         "id": "F003",
@@ -113,7 +120,8 @@
         },
         "full_address": "219 Lasswade Road, Liberton, Edinburgh, EH16 6PT",
         "category": "fire_service",
-        "type": "Community Fire Station"
+        "type": "Community Fire Station",
+        "max_capacity": 2
       },
       {
         "id": "F004",
@@ -127,7 +135,8 @@
         },
         "full_address": "3 Calder Road, Sighthill, Edinburgh, EH11 4BJ",
         "category": "fire_service",
-        "type": "Community Fire Station"
+        "type": "Community Fire Station",
+        "max_capacity": 4
       },
       {
         "id": "F005",
@@ -141,7 +150,8 @@
         },
         "full_address": "Newcraighall Road, Newcraighall, Edinburgh, EH21 8RE",
         "category": "fire_service",
-        "type": "Community Fire Station"
+        "type": "Community Fire Station",
+        "max_capacity": 3
             }
           ],
     "police_services": [
@@ -157,7 +167,8 @@
         },
         "full_address": "Fettes Avenue, Fettes, Edinburgh, EH4 1RB",
         "category": "police_service",
-        "type": "Headquarters"
+        "type": "Headquarters",
+        "max_capacity": 6
       },
       {
         "id": "P002",
@@ -171,7 +182,8 @@
         },
         "full_address": "14 St Leonard's Street, Newington, Edinburgh, EH8 9QW",
         "category": "police_service",
-        "type": "Area Station"
+        "type": "Area Station",
+        "max_capacity": 4
       },
       {
         "id": "P003",
@@ -185,7 +197,8 @@
         },
         "full_address": "2 Gayfield Square, Broughton, Edinburgh, EH1 3NX",
         "category": "police_service",
-        "type": "Area Station"
+        "type": "Area Station",
+        "max_capacity": 5
       },
       {
         "id": "P004",
@@ -199,7 +212,8 @@
         },
         "full_address": "379 St John's Road, Corstorphine, Edinburgh, EH12 7AT",
         "category": "police_service",
-        "type": "Area Station"
+        "type": "Area Station",
+        "max_capacity": 3
       },
       {
         "id": "P005",
@@ -213,7 +227,8 @@
         },
         "full_address": "7 Queen Charlotte Street, Leith, Edinburgh, EH6 7EY",
         "category": "police_service",
-        "type": "Area Station"
+        "type": "Area Station",
+        "max_capacity": 4
       }
     ]
   }
