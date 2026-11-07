@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# output files
+src/data/*.json
+src/data/*.geojson
+src/data/archive/*.html
