@@ -13,7 +13,8 @@ def distance_color(km, max_km=10):
     return f"#{red:02x}{green:02x}00"
 
 def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
-                        visible_categories, center, zoom=12):
+                        visible_categories, center, assignments=None, zoom=12):
+    assignments = assignments or {}
     city_map = folium.Map(location=center, zoom_start=zoom, tiles="OpenStreetMap")
 
     for c in centers:
@@ -23,10 +24,14 @@ def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
         style = CATEGORY_STYLE.get(
             c["category"], {"color": "gray", "icon": "info-sign", "prefix": "glyphicon"}
         )
+        assigned = assignments.get(c["name"], 0)
+        marker_color = style["color"] if assigned > 0 else "lightgray"
+
         folium.Marker(
             location=[c["lat"], c["lon"]],
-            popup=f"{c['name']} ({c['category']})",
-            icon=folium.Icon(color=style["color"], icon=style["icon"], prefix=style["prefix"]),
+            popup=f"{c['name']} ({c['category']})<br>Vehicles assigned: {assigned}",
+            tooltip=f"{c['name']} — {assigned} vehicle(s)",
+            icon=folium.Icon(color=marker_color, icon=style["icon"], prefix=style["prefix"]),
         ).add_to(city_map)
 
     for a in accidents:
