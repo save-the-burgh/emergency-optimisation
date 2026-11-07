@@ -1,0 +1,149 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-07T19:11:08Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 150512694,
+  "center": {
+    "lat": 51.9231053,
+    "lon": 0.8920793
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Cygnet Hospital Colchester",
+    "old_name": "Cambian Fairview",
+    "operator": "Cygnet Learning Disabilities Limited",
+    "ref:GB:cqc_location": "1-118514298",
+    "website": "https://www.cygnetgroup.com/locations/cygnet-hospital-colchester/"
+  }
+},
+{
+  "type": "way",
+  "id": 511076213,
+  "center": {
+    "lat": 51.8685989,
+    "lon": 0.8933880
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "military": "yes",
+    "name": "Chavasse V C House",
+    "source": "OS OpenMap Local",
+    "website": "http://www.helpforheroes.org.uk/get-support/how-to-access-our-services/recovery-in-the-east/"
+  }
+},
+{
+  "type": "way",
+  "id": 521847293,
+  "center": {
+    "lat": 51.8862598,
+    "lon": 0.8943425
+  },
+  "tags": {
+    "addr:city": "Colchester",
+    "addr:housenumber": "10",
+    "addr:postcode": "CO3 3BU",
+    "addr:street": "Southway",
+    "amenity": "police",
+    "name": "Colchester Police Station"
+  }
+},
+{
+  "type": "way",
+  "id": 640367242,
+  "center": {
+    "lat": 51.9090022,
+    "lon": 0.8997515
+  },
+  "tags": {
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Colchester General Hospital",
+    "operator": "East Suffolk and North Essex NHS Foundation Trust",
+    "ref:GB:cqc_location": "RDEE4",
+    "ref:GB:nhs_ods": "RDEE4",
+    "wikidata": "Q30280102",
+    "wikipedia": "en:Colchester Hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 662317984,
+  "center": {
+    "lat": 51.9185738,
+    "lon": 0.8927168
+  },
+  "tags": {
+    "addr:city": "Colchester",
+    "addr:housenumber": "2",
+    "addr:postcode": "CO4 5HG",
+    "addr:street": "Boxted Road",
+    "amenity": "hospital",
+    "fhrs:id": "1586634",
+    "healthcare": "hospital",
+    "name": "St Aubyn Centre",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "way",
+  "id": 900729250,
+  "center": {
+    "lat": 51.9063079,
+    "lon": 0.8952910
+  },
+  "tags": {
+    "addr:city": "Colchester",
+    "addr:housenumber": "120",
+    "addr:postcode": "CO4 5XR",
+    "addr:street": "Mile End Road",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Oaks Hospital",
+    "phone": "+44 1206 752 121"
+  }
+},
+{
+  "type": "way",
+  "id": 1292673432,
+  "center": {
+    "lat": 51.8970379,
+    "lon": 0.9016581
+  },
+  "tags": {
+    "addr:city": "Colchester",
+    "addr:postcode": "CO1 1XT",
+    "amenity": "fire_station",
+    "name": "Colchester Fire Station"
+  }
+},
+{
+  "type": "way",
+  "id": 1550758168,
+  "center": {
+    "lat": 51.9117859,
+    "lon": 0.9014152
+  },
+  "tags": {
+    "addr:postcode": "CO4 5JY",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "King's Wood Centre",
+    "operator": "Essex Partnership University NHS Foundation Trust",
+    "operator:type": "public",
+    "ref:GB:uprn": "100091246229",
+    "source:addr:postcode": "ONSUD;OS Open UPRN"
+  }
+}
+
+  ]
+}

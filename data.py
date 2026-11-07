@@ -1,12 +1,17 @@
 import random
 import requests
 from geopy.distance import geodesic
+from geopy.geocoders import Nominatim
+from geopy.extra.rate_limiter import RateLimiter
 
 OVERPASS_URLS = [
     "https://overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
 ]
-EDINBURGH_BBOX = "55.90,-3.30,55.97,-3.10"  # south,west,north,east
+
+HEADERS = {
+    "User-Agent": "EdinburghDispatchSim/1.0 (student project; contact: your-email@example.com)"
+}
 
 AMENITY_CATEGORY_MAP = {
     "hospital": "Hospitals",
@@ -14,30 +19,27 @@ AMENITY_CATEGORY_MAP = {
     "police": "Police Stations",
 }
 
-# --- Fallback data used if OpenStreetMap is unreachable ---
-# NOTE: Verify these against official sources before using beyond a prototype.
-FALLBACK_CENTERS = [
-    # Hospitals
-    {"name": "Royal Infirmary of Edinburgh", "lat": 55.9220, "lon": -3.1338, "category": "Hospitals"},
-    {"name": "Western General Hospital",     "lat": 55.9649, "lon": -3.2210, "category": "Hospitals"},
-    {"name": "Royal Edinburgh Hospital",     "lat": 55.9254, "lon": -3.2209, "category": "Hospitals"},
-    {"name": "Astley Ainslie Hospital",      "lat": 55.9316, "lon": -3.2075, "category": "Hospitals"},
-    {"name": "Liberton Hospital",            "lat": 55.9196, "lon": -3.1584, "category": "Hospitals"},
+_geolocator = Nominatim(user_agent=HEADERS["User-Agent"])
+_geocode = RateLimiter(_geolocator.geocode, min_delay_seconds=1)
 
-    # Fire Stations
-    {"name": "McDonald Road Fire Station",   "lat": 55.9637, "lon": -3.1844, "category": "Fire Stations"},
-    {"name": "Tollcross Fire Station",       "lat": 55.9427, "lon": -3.2042, "category": "Fire Stations"},
-    {"name": "Liberton Fire Station",        "lat": 55.9117, "lon": -3.1623, "category": "Fire Stations"},
-    {"name": "Crewe Toll Fire Station",      "lat": 55.9721, "lon": -3.2252, "category": "Fire Stations"},
-    {"name": "Marionville Fire Station",     "lat": 55.9567, "lon": -3.1503, "category": "Fire Stations"},
 
-    # Police Stations
-    {"name": "St Leonard's Police Station",  "lat": 55.9429, "lon": -3.1810, "category": "Police Stations"},
-    {"name": "Gayfield Square Police Station","lat": 55.9578, "lon": -3.1839, "category": "Police Stations"},
-    {"name": "Corstorphine Police Station",  "lat": 55.9423, "lon": -3.2745, "category": "Police Stations"},
-    {"name": "Drylaw Police Station",        "lat": 55.9680, "lon": -3.2418, "category": "Police Stations"},
-    {"name": "Wester Hailes Police Station", "lat": 55.9219, "lon": -3.2920, "category": "Police Stations"},
-]
+def geocode_city(city_name):
+    """Turn a city name into a center point + bounding box via Nominatim."""
+    location = _geocode(city_name, exactly_one=True)
+
+    if location is None:
+        raise ValueError(f"Could not find a location for '{city_name}'")
+
+    bbox = location.raw.get("boundingbox")
+    if not bbox:
+        raise ValueError(f"No bounding box returned for '{city_name}'")
+
+    south, north, west, east = map(float, bbox)
+
+    return {
+        "center": {"lat": location.latitude, "lon": location.longitude},
+        "bounds": {"lat_min": south, "lat_max": north, "lon_min": west, "lon_max": east},
+    }
 
 
 def _build_overpass_query(bbox):
@@ -73,51 +75,60 @@ def _parse_osm_elements(elements):
     return centers
 
 
-HEADERS = {
-    "User-Agent": "HackathonSim1.0 (student project; contact: your-email@example.com)"
-}
-
-def fetch_emergency_centers(bbox=EDINBURGH_BBOX):
-    """
-    Query OpenStreetMap (via Overpass API) for hospitals, fire stations,
-    and police stations. Tries multiple mirrors before giving up.
-
-    Raises requests.RequestException if every mirror fails — the caller
-    decides how to handle that (e.g. fall back to FALLBACK_CENTERS).
-    """
+def fetch_emergency_centers(bbox):
+    """Query Overpass for hospitals/fire/police within a given bbox string."""
     query = _build_overpass_query(bbox)
-    last_error = None
+    errors = []
 
     for url in OVERPASS_URLS:
         try:
-            response = requests.get(url, params={"data": query}, timeout=30)
+            response = requests.get(url, params={"data": query}, headers=HEADERS, timeout=30)
             response.raise_for_status()
-            elements = response.json()["elements"]
-            return _parse_osm_elements(elements)
+            return _parse_osm_elements(response.json()["elements"])
         except requests.RequestException as exc:
-            last_error = exc
-            continue
+            errors.append(f"{url} -> {exc}")
 
-    raise last_error
+    raise RuntimeError("All Overpass mirrors failed:\n" + "\n".join(errors))
 
 
-EDINBURGH_BOUNDS = {
-    "lat_min": 55.90, "lat_max": 55.97,
-    "lon_min": -3.30, "lon_max": -3.10,
-}
+def fetch_city_data(city_name):
+    """
+    Full pipeline for a NEW city (not one of the 3 preloaded ones):
+    name -> geocode -> fetch emergency centers.
+    Used only by the "Add City" button in app.py.
+    """
+    geo = geocode_city(city_name)
+    b = geo["bounds"]
+    bbox = f"{b['lat_min']},{b['lon_min']},{b['lat_max']},{b['lon_max']}"
 
-def generate_random_accidents(n=5, seed=None):
+    centers = fetch_emergency_centers(bbox)
+
+    return {
+        "name": city_name,
+        "center": geo["center"],
+        "bounds": geo["bounds"],
+        "centers": centers,
+    }
+
+
+def generate_random_accidents(bounds, n=5, seed=None):
+    """Generate n random accident locations within a city's bounding box."""
     if seed is not None:
         random.seed(seed)
 
     accidents = []
     for i in range(n):
-        lat = random.uniform(EDINBURGH_BOUNDS["lat_min"], EDINBURGH_BOUNDS["lat_max"])
-        lon = random.uniform(EDINBURGH_BOUNDS["lon_min"], EDINBURGH_BOUNDS["lon_max"])
+        lat = random.uniform(bounds["lat_min"], bounds["lat_max"])
+        lon = random.uniform(bounds["lon_min"], bounds["lon_max"])
         accidents.append({"id": f"A{i+1}", "lat": lat, "lon": lon})
     return accidents
 
+
 def calculate_distances(hospitals, accidents):
+    """
+    PLACEHOLDER — replace with your teammate's real distance-calculation
+    module once ready. Must return the same shape of data.
+    """
     enriched = []
     for a in accidents:
         distances = []

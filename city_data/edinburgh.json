@@ -1,0 +1,195 @@
+{
+  "name": "Edinburgh",
+  "center": {
+    "lat": 55.9533,
+    "lon": -3.1883
+  },
+  "bounds": {
+    "lat_min": 55.9,
+    "lat_max": 55.97,
+    "lon_min": -3.3,
+    "lon_max": -3.1
+  },
+  "centers": [
+    {
+      "name": "West End Police Station",
+      "lat": 55.9466681,
+      "lon": -3.2139844,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Drylaw Police Station",
+      "lat": 55.9670307,
+      "lon": -3.2478086,
+      "category": "Police Stations"
+    },
+    {
+      "name": "BTP Edinburgh Police Station",
+      "lat": 55.9464245,
+      "lon": -3.2139967,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Astley Ainslie Hospital",
+      "lat": 55.9287569,
+      "lon": -3.1978374,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Spire Murrayfield Hospital",
+      "lat": 55.9437762,
+      "lon": -3.2640546,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Woodburn House NHS",
+      "lat": 55.9275212,
+      "lon": -3.2024259,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Western General Hospital (Edinburgh)",
+      "lat": 55.9623853,
+      "lon": -3.2347813,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Fettes Police Station",
+      "lat": 55.9605377,
+      "lon": -3.2255329,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Oxgangs Police Station",
+      "lat": 55.9076375,
+      "lon": -3.2280705,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Corstorphine Police Station",
+      "lat": 55.9404662,
+      "lon": -3.2927628,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Royal Infirmary of Edinburgh (Little France)",
+      "lat": 55.9221695,
+      "lon": -3.1345976,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Crewe Toll Fire Station",
+      "lat": 55.9679911,
+      "lon": -3.237495,
+      "category": "Fire Stations"
+    },
+    {
+      "name": "Wester Hailes Police Station",
+      "lat": 55.9186036,
+      "lon": -3.2728675,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Royal Edinburgh Hospital",
+      "lat": 55.9275818,
+      "lon": -3.2182639,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Royal Hospital for Children and Young People",
+      "lat": 55.9208958,
+      "lon": -3.1395955,
+      "category": "Hospitals"
+    },
+    {
+      "name": "McDonald Road Community Fire & Ambulance Station",
+      "lat": 55.9638684,
+      "lon": -3.1844406,
+      "category": "Fire Stations"
+    },
+    {
+      "name": "Craigmillar Police Station",
+      "lat": 55.9333274,
+      "lon": -3.1404148,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Unnamed Police Station",
+      "lat": 55.9604795,
+      "lon": -3.2263285,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Sighthill Community Fire Station",
+      "lat": 55.9236946,
+      "lon": -3.2849215,
+      "category": "Fire Stations"
+    },
+    {
+      "name": "Marionville Community Fire Station",
+      "lat": 55.9574754,
+      "lon": -3.1501365,
+      "category": "Fire Stations"
+    },
+    {
+      "name": "Liberton Fire Station",
+      "lat": 55.919029,
+      "lon": -3.1650873,
+      "category": "Fire Stations"
+    },
+    {
+      "name": "Howdenhall Police Station",
+      "lat": 55.9043999,
+      "lon": -3.164961,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Ellen's Glen Community Hospital",
+      "lat": 55.9094642,
+      "lon": -3.1494516,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Chalmers Centre",
+      "lat": 55.9445195,
+      "lon": -3.1983556,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Princess Alexandra Eye Pavilion",
+      "lat": 55.94412,
+      "lon": -3.1981965,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Lauriston Building",
+      "lat": 55.9443708,
+      "lon": -3.1967679,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Findlay House",
+      "lat": 55.9680261,
+      "lon": -3.1442661,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Gayfield Square Police Station",
+      "lat": 55.9585989,
+      "lon": -3.1857381,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Tollcross Fire Station",
+      "lat": 55.9436795,
+      "lon": -3.2051381,
+      "category": "Fire Stations"
+    },
+    {
+      "name": "St Leonard's Police Station and Divisional Headquarters",
+      "lat": 55.9431625,
+      "lon": -3.1790247,
+      "category": "Police Stations"
+    }
+  ]
+}

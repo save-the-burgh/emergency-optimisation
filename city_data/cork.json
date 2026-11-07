@@ -1,0 +1,129 @@
+{
+  "name": "Cork",
+  "center": {
+    "lat": 51.8985,
+    "lon": -8.4756
+  },
+  "bounds": {
+    "lat_min": 51.85,
+    "lat_max": 51.95,
+    "lon_min": -8.55,
+    "lon_max": -8.4
+  },
+  "centers": [
+    {
+      "name": "South Infirmary-Victoria University Hospital",
+      "lat": 51.8935409,
+      "lon": -8.4641489,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Unnamed Fire Station",
+      "lat": 51.8962257,
+      "lon": -8.4651121,
+      "category": "Fire Stations"
+    },
+    {
+      "name": "Saint Mary's Health Campus",
+      "lat": 51.9047514,
+      "lon": -8.49966,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Saint Finbarr's Hospital",
+      "lat": 51.8875991,
+      "lon": -8.4610188,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Bon Secours Hospital",
+      "lat": 51.8925233,
+      "lon": -8.4974258,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Mater Private Cork",
+      "lat": 51.8863227,
+      "lon": -8.4059816,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Cork University Hospital",
+      "lat": 51.8833458,
+      "lon": -8.5120707,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Mayfield Garda Station",
+      "lat": 51.909661,
+      "lon": -8.4290095,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Douglas Garda Station",
+      "lat": 51.875106,
+      "lon": -8.4309006,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Mercy University Hospital",
+      "lat": 51.8989402,
+      "lon": -8.4824487,
+      "category": "Hospitals"
+    },
+    {
+      "name": "Blackrock Garda Station",
+      "lat": 51.8941902,
+      "lon": -8.4043957,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Ballyvolane Fire Station",
+      "lat": 51.9150704,
+      "lon": -8.463716,
+      "category": "Fire Stations"
+    },
+    {
+      "name": "Togher Garda Station",
+      "lat": 51.8763522,
+      "lon": -8.4860704,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Gurranabraher Garda Station",
+      "lat": 51.9035408,
+      "lon": -8.4966706,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Bishopstown Garda Station",
+      "lat": 51.8806782,
+      "lon": -8.5145703,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Bridewell Garda Station",
+      "lat": 51.9004479,
+      "lon": -8.477125,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Anglesea Street Garda Station",
+      "lat": 51.8958593,
+      "lon": -8.4646136,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Unnamed Police Station",
+      "lat": 51.8957816,
+      "lon": -8.4649461,
+      "category": "Police Stations"
+    },
+    {
+      "name": "Anglesea Street Fire Station",
+      "lat": 51.8962269,
+      "lon": -8.465152,
+      "category": "Fire Stations"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-07T19:10:07Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 32284254,
+  "center": {
+    "lat": 51.8935409,
+    "lon": -8.4641489
+  },
+  "tags": {
+    "HSE_code": "206",
+    "HSE_hgid": "5",
+    "HSE_hgroup": "South/South West Hospital Group",
+    "HSE_region": "South West",
+    "addr:city": "Cork",
+    "addr:postcode": "T12 X23H",
+    "addr:street": "Old Blackrock Road",
+    "alt_name": "SIVUH",
+    "amenity": "hospital",
+    "emergency": "Ear, Nose and Throat;Sexual Assault Treatment Unit only",
+    "healthcare": "hospital",
+    "name": "South Infirmary-Victoria University Hospital",
+    "operator": "Health Service Executive",
+    "operator:short": "HSE",
+    "operator:type": "public",
+    "operator:wikidata": "Q5690681",
+    "operator:wikipedia": "en:Health Service Executive",
+    "phone": "+353 21 492 6100",
+    "wheelchair": "yes",
+    "wikipedia": "en:South Infirmary-Victoria University Hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 39021285,
+  "center": {
+    "lat": 51.8962257,
+    "lon": -8.4651121
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:street": "Anglesea Street",
+    "amenity": "fire_station",
+    "building": "yes",
+    "building:levels": "5",
+    "year_of_construction": "1975"
+  }
+},
+{
+  "type": "way",
+  "id": 75918606,
+  "center": {
+    "lat": 51.9047514,
+    "lon": -8.4996600
+  },
+  "tags": {
+    "addr:street": "Baker's Road",
+    "amenity": "hospital",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "healthcare:speciality": "orthopaedics",
+    "name": "Saint Mary's Health Campus",
+    "old_name": "Saint Mary's Orthopaedic Hospital",
+    "wheelchair": "yes",
+    "wikidata": "Q7590381",
+    "wikipedia": "en:St. Mary's Health Campus"
+  }
+},
+{
+  "type": "way",
+  "id": 78179212,
+  "center": {
+    "lat": 51.8875991,
+    "lon": -8.4610188
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:postcode": "T12 XH60",
+    "addr:street": "Douglas Road",
+    "amenity": "hospital",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "name": "Saint Finbarr's Hospital",
+    "phone": "+353 21 496 6555",
+    "wheelchair": "yes",
+    "wikidata": "Q7587909",
+    "wikipedia": "en:St. Finbarr's Hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 80528752,
+  "center": {
+    "lat": 51.8925233,
+    "lon": -8.4974258
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:postcode": "T12 DV56",
+    "addr:street": "College Road",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Bon Secours Hospital",
+    "phone": "+353 21 454 2807",
+    "website": "https://www.bonsecours.ie/cork",
+    "wheelchair": "yes",
+    "wikidata": "Q4941006",
+    "wikimedia_commons": "Category:Bon Secours Hospital, Cork",
+    "wikipedia": "en:Bon Secours Hospital, Cork"
+  }
+},
+{
+  "type": "way",
+  "id": 95527394,
+  "center": {
+    "lat": 51.8863227,
+    "lon": -8.4059816
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:street": "City Gate",
+    "amenity": "hospital",
+    "building": "hospital",
+    "healthcare": "hospital",
+    "name": "Mater Private Cork",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 118618667,
+  "center": {
+    "lat": 51.8833458,
+    "lon": -8.5120707
+  },
+  "tags": {
+    "HSE_code": "235",
+    "HSE_hgid": "5",
+    "HSE_hgroup": "South/South West Hospital Group",
+    "HSE_region": "South West",
+    "addr:city": "Cork",
+    "addr:street": "Bishopstown Road",
+    "alt_name": "CUH",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Cork University Hospital",
+    "operator": "Health Service Executive",
+    "operator:short": "HSE",
+    "operator:type": "public",
+    "operator:wikidata": "Q5690681",
+    "operator:wikipedia": "en:Health Service Executive",
+    "wikidata": "Q5170825",
+    "wikimedia_commons": "Category:Cork University Hospital",
+    "wikipedia": "en:Cork University Hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 153233802,
+  "center": {
+    "lat": 51.9096610,
+    "lon": -8.4290095
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:street": "Colmhille Avenue",
+    "amenity": "police",
+    "building": "yes",
+    "name": "Mayfield Garda Station",
+    "operator": "Garda Síochána",
+    "operator:wikidata": "Q1366959",
+    "operator:wikipedia": "en:Garda Síochána"
+  }
+},
+{
+  "type": "way",
+  "id": 223408371,
+  "center": {
+    "lat": 51.8751060,
+    "lon": -8.4309006
+  },
+  "tags": {
+    "addr:city": "Douglas",
+    "addr:street": "Maryborough Hill",
+    "amenity": "police",
+    "building": "civic",
+    "name": "Douglas Garda Station",
+    "operator": "Garda Síochána",
+    "operator:wikidata": "Q1366959",
+    "operator:wikipedia": "en:Garda Síochána"
+  }
+},
+{
+  "type": "way",
+  "id": 353427032,
+  "center": {
+    "lat": 51.8989402,
+    "lon": -8.4824487
+  },
+  "tags": {
+    "HSE_code": "203",
+    "HSE_hgid": "5",
+    "HSE_hgroup": "South/South West Hospital Group",
+    "HSE_region": "South West",
+    "addr:postcode": "T12 WE28",
+    "addr:street": "Grenville Place",
+    "amenity": "hospital",
+    "email": "enquiries@muh.ie",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "healthcare:speciality": "emergency;cardiology;dietics;intensive;physiotherapy;men's_health;stroke;psychiatry;urology;oncology;paediatrics;general",
+    "name": "Mercy University Hospital",
+    "operator": "Health Service Executive",
+    "operator:short": "HSE",
+    "operator:type": "public",
+    "operator:wikidata": "Q5690681",
+    "operator:wikipedia": "en:Health Service Executive",
+    "phone": "+353 21 427 1971",
+    "start_date": "1857",
+    "website": "https://www.muh.ie/",
+    "wikidata": "Q38251273",
+    "wikipedia": "en:Mercy University Hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 427065975,
+  "center": {
+    "lat": 51.8941902,
+    "lon": -8.4043957
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:street": "Ring Mahon Road",
+    "amenity": "police",
+    "name": "Blackrock Garda Station",
+    "operator": "Garda Síochána",
+    "operator:wikidata": "Q1366959",
+    "operator:wikipedia": "en:Garda Síochána",
+    "website": "https://www.garda.ie/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 671596551,
+  "center": {
+    "lat": 51.9150704,
+    "lon": -8.4637160
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:postcode": "T23 P280",
+    "addr:street": "North Ring Road",
+    "addr:suburb": "Ballyvolane",
+    "amenity": "fire_station",
+    "name": "Ballyvolane Fire Station",
+    "operator": "Cork City Fire and Rescue Services",
+    "operator:wikidata": "Q60764396",
+    "website": "https://www.corkcity.ie/en/council-services/services/emergency-management/cork-city-fire-brigade/",
+    "year_of_construction": "2000"
+  }
+},
+{
+  "type": "way",
+  "id": 761402876,
+  "center": {
+    "lat": 51.8763522,
+    "lon": -8.4860704
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:street": "Tramore Road",
+    "amenity": "police",
+    "name": "Togher Garda Station",
+    "operator": "Garda Síochána",
+    "operator:wikidata": "Q1366959",
+    "operator:wikipedia": "en:Garda Síochána"
+  }
+},
+{
+  "type": "way",
+  "id": 887456897,
+  "center": {
+    "lat": 51.9035408,
+    "lon": -8.4966706
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:postcode": "T23 A720",
+    "addr:street": "Bakers Road",
+    "amenity": "police",
+    "name": "Gurranabraher Garda Station",
+    "operator": "Garda Síochána",
+    "operator:wikidata": "Q1366959",
+    "operator:wikipedia": "en:Garda Síochána"
+  }
+},
+{
+  "type": "way",
+  "id": 914336099,
+  "center": {
+    "lat": 51.8806782,
+    "lon": -8.5145703
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:street": "Bishopstown Road",
+    "amenity": "police",
+    "building": "yes",
+    "name": "Bishopstown Garda Station",
+    "operator": "Garda Síochána",
+    "operator:wikidata": "Q1366959",
+    "operator:wikipedia": "en:Garda Síochána",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 1309980661,
+  "center": {
+    "lat": 51.9004479,
+    "lon": -8.4771250
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:housenumber": "50",
+    "addr:street": "Cornmarket Street",
+    "amenity": "police",
+    "check_date": "2026-10-20",
+    "name": "Bridewell Garda Station",
+    "operator": "Garda Síochána",
+    "operator:wikidata": "Q1366959",
+    "operator:wikipedia": "en:Garda Síochána",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 1350604553,
+  "center": {
+    "lat": 51.8958593,
+    "lon": -8.4646136
+  },
+  "tags": {
+    "addr:city": "Cork",
+    "addr:street": "Anglesea Street",
+    "amenity": "police",
+    "name": "Anglesea Street Garda Station",
+    "operator": "Garda Síochána",
+    "operator:wikidata": "Q1366959",
+    "operator:wikipedia": "en:Garda Síochána"
+  }
+},
+{
+  "type": "way",
+  "id": 1350604554,
+  "center": {
+    "lat": 51.8957816,
+    "lon": -8.4649461
+  },
+  "tags": {
+    "amenity": "police",
+    "building": "yes",
+    "building:levels": "4"
+  }
+},
+{
+  "type": "way",
+  "id": 1351915022,
+  "center": {
+    "lat": 51.8962269,
+    "lon": -8.4651520
+  },
+  "tags": {
+    "alt_name": "Central Fire Station",
+    "amenity": "fire_station",
+    "name": "Anglesea Street Fire Station",
+    "operator:wikidata": "Q60764396",
+    "website": "https://www.corkcity.ie/en/council-services/services/emergency-management/cork-city-fire-brigade/"
+  }
+}
+
+  ]
+}
