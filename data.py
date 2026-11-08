@@ -36,6 +36,12 @@ LARGE_HOSPITAL_MARKERS = (
     "western general",
 )
 
+SERVICE_CATEGORY_LABELS = {
+    "hospital": "Hospital",
+    "fire": "Fire Station",
+    "police": "Police Station",
+}
+
 
 _geolocator = Nominatim(user_agent=HEADERS["User-Agent"])
 _geocode = RateLimiter(_geolocator.geocode, min_delay_seconds=1)
@@ -205,13 +211,20 @@ def save_incident_data(city_name, incidents):
     return output_path
 
 
-def calculate_distances(hospitals, accidents):
-    """Add OSRM driving distances from each accident to every hospital."""
+def calculate_distances(service_sites, accidents):
+    """Add ordered driving distances to sites matching each incident category."""
     enriched = []
     for a in accidents:
+        category = a["category"]
+        if category not in SERVICE_CATEGORY_LABELS:
+            raise ValueError(f"Unknown incident category: {category}")
+
         distances = []
-        for h in hospitals:
-            coordinates = f"{a['lon']},{a['lat']};{h['lon']},{h['lat']}"
+        matching_sites = [
+            site for site in service_sites if site["category"] == category
+        ]
+        for site in matching_sites:
+            coordinates = f"{a['lon']},{a['lat']};{site['lon']},{site['lat']}"
             response = requests.get(
                 f"https://router.project-osrm.org/route/v1/driving/{coordinates}",
                 params={"overview": "false"},
@@ -221,13 +234,15 @@ def calculate_distances(hospitals, accidents):
             routes = response.json().get("routes", [])
             if not routes:
                 raise RuntimeError(
-                    f"No driving route found from accident {a['id']} to {h['name']}"
+                    f"No driving route found from incident {a['id']} "
+                    f"to {site['name']}"
                 )
             km = routes[0]["distance"] / 1000
             distances.append({
-                "index": h["index"],
-                "hospital": h["name"],
-                "capacity": h["capacity"],
+                "index": site["index"],
+                "service_site": site["name"],
+                "category": category,
+                "capacity": site["capacity"],
                 "distance_km": round(km, 2),
             })
         distances.sort(key=lambda d: d["distance_km"])

@@ -14,3 +14,7 @@ and coordinates. Capacities are deterministic simulation estimates in
 concurrent incidents: hospitals are assigned 12–30, larger hospitals 30–60,
 fire stations 2–4, and police stations 3–8. These are not verified
 operational capacities.
+
+Each incident is routed only to service sites matching its type: hospital
+incidents to hospitals, fire incidents to fire stations, and police incidents
+to police stations. The saved distance list is sorted from nearest to farthest.

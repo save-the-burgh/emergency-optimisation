@@ -12,13 +12,13 @@ def distance_color(km, max_km=10):
     green = int(255 * (1 - ratio))
     return f"#{red:02x}{green:02x}00"
 
-def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
+def build_dispatch_map(centers, accidents, selected_accident_id,
                         visible_categories, center, assignments=None, zoom=12):
     assignments = assignments or {}
 
     # --- TILES: swapped from default OSM to CartoDB positron ---
     city_map = folium.Map(location=center, zoom_start=zoom, tiles="OpenStreetMap")
-    hospitals_by_index = {hospital["index"]: hospital for hospital in hospitals}
+    centers_by_index = {service_site["index"]: service_site for service_site in centers}
 
     for c in centers:
         if not visible_categories.get(c["category"], False):
@@ -50,14 +50,20 @@ def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
             continue
 
         for i, d in enumerate(a["distances"]):
-            hosp = hospitals_by_index[d["index"]]
+            service_site = centers_by_index[d["index"]]
             is_nearest = (i == 0)
             folium.PolyLine(
-                locations=[[a["lat"], a["lon"]], [hosp["lat"], hosp["lon"]]],
+                locations=[
+                    [a["lat"], a["lon"]],
+                    [service_site["lat"], service_site["lon"]],
+                ],
                 color=distance_color(d["distance_km"]),
                 weight=5 if is_nearest else 3,
                 opacity=1.0 if is_nearest else 0.6,
-                tooltip=f"{a['id']} → {hosp['name']}: {d['distance_km']} km",
+                tooltip=(
+                    f"{a['id']} → {service_site['name']}: "
+                    f"{d['distance_km']} km"
+                ),
             ).add_to(city_map)
 
 

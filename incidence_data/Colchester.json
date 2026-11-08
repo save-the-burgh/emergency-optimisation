@@ -7,40 +7,11 @@
       "category": "fire",
       "distances": [
         {
-          "index": "53444f1c166070865030e72416e2fccb41dee110d6b8acbda989ed64b2a688a6",
-          "hospital": "Chavasse V C House",
-          "capacity": 30,
-          "distance_km": 2.33
-        },
-        {
-          "index": "ee131e08a6a491ef42f5d66aa942a58ba8cdd9240bbdc9fc3b465bbb656652de",
-          "hospital": "Oaks Hospital",
-          "capacity": 30,
-          "distance_km": 7.86
-        },
-        {
-          "index": "940b053bdf4bf8a268a80b431f2a1d45f56aaf82f6a91edfd772c0076493b5f0",
-          "hospital": "Colchester General Hospital",
-          "capacity": 57,
-          "distance_km": 8.52
-        },
-        {
-          "index": "3f939011dda69cf20707c9b001022ff204f7f5419e03ff34115befe54205650e",
-          "hospital": "King's Wood Centre",
-          "capacity": 15,
-          "distance_km": 8.62
-        },
-        {
-          "index": "cba86ca7ec51acd4e4759e9124fc5b6e05ff1ac007c670c1628eee0449bdb8ce",
-          "hospital": "St Aubyn Centre",
-          "capacity": 27,
-          "distance_km": 9.78
-        },
-        {
-          "index": "dd88bda7a77b00691908a8ae577571015384938c4e521e51c9596ebcdb2d6563",
-          "hospital": "Cygnet Hospital Colchester",
-          "capacity": 28,
-          "distance_km": 10.71
+          "index": "eac393e3db3d02f59017a7e8226b7eb9a6be8b72468d189067929004cd115d1e",
+          "service_site": "Colchester Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 7.23
         }
       ]
     },
@@ -51,40 +22,11 @@
       "category": "police",
       "distances": [
         {
-          "index": "53444f1c166070865030e72416e2fccb41dee110d6b8acbda989ed64b2a688a6",
-          "hospital": "Chavasse V C House",
-          "capacity": 30,
-          "distance_km": 4.22
-        },
-        {
-          "index": "ee131e08a6a491ef42f5d66aa942a58ba8cdd9240bbdc9fc3b465bbb656652de",
-          "hospital": "Oaks Hospital",
-          "capacity": 30,
-          "distance_km": 5.72
-        },
-        {
-          "index": "940b053bdf4bf8a268a80b431f2a1d45f56aaf82f6a91edfd772c0076493b5f0",
-          "hospital": "Colchester General Hospital",
-          "capacity": 57,
-          "distance_km": 6.37
-        },
-        {
-          "index": "3f939011dda69cf20707c9b001022ff204f7f5419e03ff34115befe54205650e",
-          "hospital": "King's Wood Centre",
-          "capacity": 15,
-          "distance_km": 6.48
-        },
-        {
-          "index": "cba86ca7ec51acd4e4759e9124fc5b6e05ff1ac007c670c1628eee0449bdb8ce",
-          "hospital": "St Aubyn Centre",
-          "capacity": 27,
-          "distance_km": 7.63
-        },
-        {
-          "index": "dd88bda7a77b00691908a8ae577571015384938c4e521e51c9596ebcdb2d6563",
-          "hospital": "Cygnet Hospital Colchester",
-          "capacity": 28,
-          "distance_km": 9.41
+          "index": "4a513083663d1fe8952adefc6079e3a4804cb328a6621120a8b84ce302e54d57",
+          "service_site": "Colchester Police Station",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 3.1
         }
       ]
     },
@@ -96,37 +38,43 @@
       "distances": [
         {
           "index": "3f939011dda69cf20707c9b001022ff204f7f5419e03ff34115befe54205650e",
-          "hospital": "King's Wood Centre",
+          "service_site": "King's Wood Centre",
+          "category": "hospital",
           "capacity": 15,
           "distance_km": 3.9
         },
         {
           "index": "dd88bda7a77b00691908a8ae577571015384938c4e521e51c9596ebcdb2d6563",
-          "hospital": "Cygnet Hospital Colchester",
+          "service_site": "Cygnet Hospital Colchester",
+          "category": "hospital",
           "capacity": 28,
           "distance_km": 4.16
         },
         {
           "index": "940b053bdf4bf8a268a80b431f2a1d45f56aaf82f6a91edfd772c0076493b5f0",
-          "hospital": "Colchester General Hospital",
+          "service_site": "Colchester General Hospital",
+          "category": "hospital",
           "capacity": 57,
           "distance_km": 4.38
         },
         {
           "index": "cba86ca7ec51acd4e4759e9124fc5b6e05ff1ac007c670c1628eee0449bdb8ce",
-          "hospital": "St Aubyn Centre",
+          "service_site": "St Aubyn Centre",
+          "category": "hospital",
           "capacity": 27,
           "distance_km": 5.23
         },
         {
           "index": "ee131e08a6a491ef42f5d66aa942a58ba8cdd9240bbdc9fc3b465bbb656652de",
-          "hospital": "Oaks Hospital",
+          "service_site": "Oaks Hospital",
+          "category": "hospital",
           "capacity": 30,
           "distance_km": 6.36
         },
         {
           "index": "53444f1c166070865030e72416e2fccb41dee110d6b8acbda989ed64b2a688a6",
-          "hospital": "Chavasse V C House",
+          "service_site": "Chavasse V C House",
+          "category": "hospital",
           "capacity": 30,
           "distance_km": 7.9
         }
@@ -139,40 +87,11 @@
       "category": "fire",
       "distances": [
         {
-          "index": "53444f1c166070865030e72416e2fccb41dee110d6b8acbda989ed64b2a688a6",
-          "hospital": "Chavasse V C House",
-          "capacity": 30,
-          "distance_km": 1.98
-        },
-        {
-          "index": "ee131e08a6a491ef42f5d66aa942a58ba8cdd9240bbdc9fc3b465bbb656652de",
-          "hospital": "Oaks Hospital",
-          "capacity": 30,
-          "distance_km": 7.47
-        },
-        {
-          "index": "940b053bdf4bf8a268a80b431f2a1d45f56aaf82f6a91edfd772c0076493b5f0",
-          "hospital": "Colchester General Hospital",
-          "capacity": 57,
-          "distance_km": 8.12
-        },
-        {
-          "index": "3f939011dda69cf20707c9b001022ff204f7f5419e03ff34115befe54205650e",
-          "hospital": "King's Wood Centre",
-          "capacity": 15,
-          "distance_km": 8.23
-        },
-        {
-          "index": "cba86ca7ec51acd4e4759e9124fc5b6e05ff1ac007c670c1628eee0449bdb8ce",
-          "hospital": "St Aubyn Centre",
-          "capacity": 27,
-          "distance_km": 9.38
-        },
-        {
-          "index": "dd88bda7a77b00691908a8ae577571015384938c4e521e51c9596ebcdb2d6563",
-          "hospital": "Cygnet Hospital Colchester",
-          "capacity": 28,
-          "distance_km": 10.32
+          "index": "eac393e3db3d02f59017a7e8226b7eb9a6be8b72468d189067929004cd115d1e",
+          "service_site": "Colchester Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 6.83
         }
       ]
     },
@@ -184,37 +103,43 @@
       "distances": [
         {
           "index": "53444f1c166070865030e72416e2fccb41dee110d6b8acbda989ed64b2a688a6",
-          "hospital": "Chavasse V C House",
+          "service_site": "Chavasse V C House",
+          "category": "hospital",
           "capacity": 30,
           "distance_km": 2.84
         },
         {
           "index": "ee131e08a6a491ef42f5d66aa942a58ba8cdd9240bbdc9fc3b465bbb656652de",
-          "hospital": "Oaks Hospital",
+          "service_site": "Oaks Hospital",
+          "category": "hospital",
           "capacity": 30,
           "distance_km": 6.66
         },
         {
           "index": "940b053bdf4bf8a268a80b431f2a1d45f56aaf82f6a91edfd772c0076493b5f0",
-          "hospital": "Colchester General Hospital",
+          "service_site": "Colchester General Hospital",
+          "category": "hospital",
           "capacity": 57,
           "distance_km": 7.32
         },
         {
           "index": "3f939011dda69cf20707c9b001022ff204f7f5419e03ff34115befe54205650e",
-          "hospital": "King's Wood Centre",
+          "service_site": "King's Wood Centre",
+          "category": "hospital",
           "capacity": 15,
           "distance_km": 7.43
         },
         {
           "index": "cba86ca7ec51acd4e4759e9124fc5b6e05ff1ac007c670c1628eee0449bdb8ce",
-          "hospital": "St Aubyn Centre",
+          "service_site": "St Aubyn Centre",
+          "category": "hospital",
           "capacity": 27,
           "distance_km": 8.58
         },
         {
           "index": "dd88bda7a77b00691908a8ae577571015384938c4e521e51c9596ebcdb2d6563",
-          "hospital": "Cygnet Hospital Colchester",
+          "service_site": "Cygnet Hospital Colchester",
+          "category": "hospital",
           "capacity": 28,
           "distance_km": 9.51
         }

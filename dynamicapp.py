@@ -5,6 +5,7 @@ from streamlit_folium import st_folium
 
 from map_builder import build_dispatch_map
 from data import (
+    SERVICE_CATEGORY_LABELS,
     fetch_city_data,
     generate_random_accidents,
     calculate_distances,
@@ -81,10 +82,9 @@ city_name = st.sidebar.selectbox("Select a city", sorted(st.session_state.cities
 city_data = st.session_state.cities[city_name]
 
 all_centers = city_data["centers"]
-hospitals = [c for c in all_centers if c["category"] == "hospital"]
 
 raw_accidents = generate_random_accidents(bounds=city_data["bounds"], n=5, seed=42)
-accidents = calculate_distances(hospitals, raw_accidents)
+accidents = calculate_distances(all_centers, raw_accidents)
 if save_jsons:
     output_path = save_incident_data(city_data["name"], accidents)
     st.sidebar.caption(f"Saved JSON: {output_path.name}")
@@ -112,13 +112,20 @@ selected = next(a for a in accidents if a["id"] == selected_accident_id)
 
 with distance_section.container():
     st.subheader(f"Distances from Accident {selected['id']}")
-    if hospitals:
+    if selected["distances"]:
+        service_label = SERVICE_CATEGORY_LABELS[selected["category"]]
+        st.caption(f"Matching service: {service_label}")
         st.table([
-            {"Hospital": d["hospital"], "Distance (km)": d["distance_km"]}
+            {
+                "Service Site": d["service_site"],
+                "Capacity": d["capacity"],
+                "Distance (km)": d["distance_km"],
+            }
             for d in selected["distances"]
         ])
     else:
-        st.warning("No hospitals found for this city.")
+        service_label = SERVICE_CATEGORY_LABELS[selected["category"]]
+        st.warning(f"No {service_label.lower()} sites found for this city.")
 
 st.sidebar.header("Map Layers")
 visible_categories = {
@@ -144,7 +151,7 @@ tab_map, tab_fleet, tab_analytics = st.tabs(["Map", "Fleet Assignment", "Analyti
 with tab_map:
     map_center = (city_data["center"]["lat"], city_data["center"]["lon"])
     city_map = build_dispatch_map(
-        all_centers, hospitals, accidents, selected_accident_id,
+        all_centers, accidents, selected_accident_id,
         visible_categories, center=map_center, assignments=city_fleet["assignments"],
     )
     st_folium(city_map, width=1200, height=700)
@@ -277,17 +284,22 @@ with tab_analytics:
     else:
         st.info("Run the optimizer or manually assign vehicles to see this chart.")
 
-    st.subheader("Accident Distances to Nearest Hospital")
+    st.subheader("Incident Distances to Nearest Matching Service")
     if accidents:
         dist_df = pd.DataFrame([
-            {"Accident": a["id"], "Nearest Hospital (km)": a["distances"][0]["distance_km"]}
+            {
+                "Incident": a["id"],
+                "Incident Type": SERVICE_CATEGORY_LABELS[a["category"]],
+                "Nearest Service (km)": a["distances"][0]["distance_km"],
+            }
             for a in accidents
             if a["distances"]
         ])
         fig2 = px.bar(
             dist_df,
-            x="Accident",
-            y="Nearest Hospital (km)",
-            title="Distance to Nearest Hospital per Accident",
+            x="Incident",
+            y="Nearest Service (km)",
+            color="Incident Type",
+            title="Distance to Nearest Matching Service per Incident",
         )
         st.plotly_chart(fig2, use_container_width=True)
