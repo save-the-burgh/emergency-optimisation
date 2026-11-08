@@ -1,220 +1,255 @@
 {
-  "service_sites": {
-    "hospitals": [
-      {
-        "id": "H001",
-        "name": "Royal Infirmary of Edinburgh",
-        "address": {
-          "street": "51 Little France Crescent",
-          "area": "Little France",
-          "city": "Edinburgh",
-          "postcode": "EH16 4SA",
-          "country": "Scotland, UK"
-        },
-        "full_address": "51 Little France Crescent, Little France, Edinburgh, EH16 4SA",
-        "category": "hospital",
-        "type": "General Acute"
-      },
-      {
-        "id": "H002",
-        "name": "Western General Hospital",
-        "address": {
-          "street": "Crewe Road South",
-          "area": "Craigleith",
-          "city": "Edinburgh",
-          "postcode": "EH4 2XU",
-          "country": "Scotland, UK"
-        },
-        "full_address": "Crewe Road South, Craigleith, Edinburgh, EH4 2XU",
-        "category": "hospital",
-        "type": "General Acute"
-      },
-      {
-        "id": "H003",
-        "name": "Royal Hospital for Children and Young People",
-        "address": {
-          "street": "50 Little France Crescent",
-          "area": "Little France",
-          "city": "Edinburgh",
-          "postcode": "EH16 4TJ",
-          "country": "Scotland, UK"
-        },
-        "full_address": "50 Little France Crescent, Little France, Edinburgh, EH16 4TJ",
-        "category": "hospital",
-        "type": "Paediatric"
-      },
-      {
-        "id": "H004",
-        "name": "Royal Edinburgh Hospital",
-        "address": {
-          "street": "Morningside Place",
-          "area": "Morningside",
-          "city": "Edinburgh",
-          "postcode": "EH10 5HF",
-          "country": "Scotland, UK"
-        },
-        "full_address": "Morningside Place, Morningside, Edinburgh, EH10 5HF",
-        "category": "hospital",
-        "type": "Mental Health"
-      },
-      {
-        "id": "H005",
-        "name": "St John's Hospital",
-        "address": {
-          "street": "Howden Road West",
-          "area": "Howden",
-          "city": "Livingston",
-          "postcode": "EH54 6PP",
-          "country": "Scotland, UK"
-        },
-        "full_address": "Howden Road West, Howden, Livingston, EH54 6PP",
-        "category": "hospital",
-        "type": "General Acute"
-      }
-    ],
-    "fire_services": [
-      {
-        "id": "F001",
-        "name": "Tollcross Community Fire Station",
-        "address": {
-          "street": "7 Lauriston Place",
-          "area": "Tollcross",
-          "city": "Edinburgh",
-          "postcode": "EH3 9DF",
-          "country": "Scotland, UK"
-        },
-        "full_address": "7 Lauriston Place, Tollcross, Edinburgh, EH3 9DF",
-        "category": "fire_service",
-        "type": "Community Fire Station"
-      },
-      {
-        "id": "F002",
-        "name": "McDonald Road Community Fire Station",
-        "address": {
-          "street": "McDonald Road",
-          "area": "Broughton",
-          "city": "Edinburgh",
-          "postcode": "EH7 4LX",
-          "country": "Scotland, UK"
-        },
-        "full_address": "McDonald Road, Broughton, Edinburgh, EH7 4LX",
-        "category": "fire_service",
-        "type": "Community Fire Station"
-      },
-      {
-        "id": "F003",
-        "name": "Liberton Community Fire Station",
-        "address": {
-          "street": "219 Lasswade Road",
-          "area": "Liberton",
-          "city": "Edinburgh",
-          "postcode": "EH16 6PT",
-          "country": "Scotland, UK"
-        },
-        "full_address": "219 Lasswade Road, Liberton, Edinburgh, EH16 6PT",
-        "category": "fire_service",
-        "type": "Community Fire Station"
-      },
-      {
-        "id": "F004",
-        "name": "Sighthill Community Fire Station",
-        "address": {
-          "street": "3 Calder Road",
-          "area": "Sighthill",
-          "city": "Edinburgh",
-          "postcode": "EH11 4BJ",
-          "country": "Scotland, UK"
-        },
-        "full_address": "3 Calder Road, Sighthill, Edinburgh, EH11 4BJ",
-        "category": "fire_service",
-        "type": "Community Fire Station"
-      },
-      {
-        "id": "F005",
-        "name": "Newcraighall Community Fire Station",
-        "address": {
-          "street": "Newcraighall Road",
-          "area": "Newcraighall",
-          "city": "Edinburgh",
-          "postcode": "EH21 8RE",
-          "country": "Scotland, UK"
-        },
-        "full_address": "Newcraighall Road, Newcraighall, Edinburgh, EH21 8RE",
-        "category": "fire_service",
-        "type": "Community Fire Station"
-            }
-          ],
-    "police_services": [
-      {
-        "id": "P001",
-        "name": "Police Scotland Headquarters",
-        "address": {
-          "street": "Fettes Avenue",
-          "area": "Fettes",
-          "city": "Edinburgh",
-          "postcode": "EH4 1RB",
-          "country": "Scotland, UK"
-        },
-        "full_address": "Fettes Avenue, Fettes, Edinburgh, EH4 1RB",
-        "category": "police_service",
-        "type": "Headquarters"
-      },
-      {
-        "id": "P002",
-        "name": "St Leonard's Police Station",
-        "address": {
-          "street": "14 St Leonard's Street",
-          "area": "Newington",
-          "city": "Edinburgh",
-          "postcode": "EH8 9QW",
-          "country": "Scotland, UK"
-        },
-        "full_address": "14 St Leonard's Street, Newington, Edinburgh, EH8 9QW",
-        "category": "police_service",
-        "type": "Area Station"
-      },
-      {
-        "id": "P003",
-        "name": "Gayfield Square Police Station",
-        "address": {
-          "street": "2 Gayfield Square",
-          "area": "Broughton",
-          "city": "Edinburgh",
-          "postcode": "EH1 3NX",
-          "country": "Scotland, UK"
-        },
-        "full_address": "2 Gayfield Square, Broughton, Edinburgh, EH1 3NX",
-        "category": "police_service",
-        "type": "Area Station"
-      },
-      {
-        "id": "P004",
-        "name": "Corstorphine Police Station",
-        "address": {
-          "street": "379 St John's Road",
-          "area": "Corstorphine",
-          "city": "Edinburgh",
-          "postcode": "EH12 7AT",
-          "country": "Scotland, UK"
-        },
-        "full_address": "379 St John's Road, Corstorphine, Edinburgh, EH12 7AT",
-        "category": "police_service",
-        "type": "Area Station"
-      },
-      {
-        "id": "P005",
-        "name": "Leith Police Station",
-        "address": {
-          "street": "7 Queen Charlotte Street",
-          "area": "Leith",
-          "city": "Edinburgh",
-          "postcode": "EH6 7EY",
-          "country": "Scotland, UK"
-        },
-        "full_address": "7 Queen Charlotte Street, Leith, Edinburgh, EH6 7EY",
-        "category": "police_service",
-        "type": "Area Station"
-      }
-    ]
-  }
+  "name": "Edinburgh",
+  "center": {
+    "lat": 55.9533,
+    "lon": -3.1883
+  },
+  "bounds": {
+    "lat_min": 55.9,
+    "lat_max": 55.97,
+    "lon_min": -3.3,
+    "lon_max": -3.1
+  },
+  "centers": [
+    {
+      "name": "West End Police Station",
+      "lat": 55.9466681,
+      "lon": -3.2139844,
+      "category": "police",
+      "index": "90273ffec0b6cf756817f4822ab056b2f2e9ace0591f713442d26d6ddcf882f7",
+      "capacity": 5
+    },
+    {
+      "name": "Drylaw Police Station",
+      "lat": 55.9670307,
+      "lon": -3.2478086,
+      "category": "police",
+      "index": "2ece3ac190644606634690ce1ebcfc5c908c8d760f54bbae3a80177078e951ec",
+      "capacity": 5
+    },
+    {
+      "name": "BTP Edinburgh Police Station",
+      "lat": 55.9464245,
+      "lon": -3.2139967,
+      "category": "police",
+      "index": "80029506918113d56b67272540dfd001937e817e25d439d78f164511fd97dfd8",
+      "capacity": 6
+    },
+    {
+      "name": "Astley Ainslie Hospital",
+      "lat": 55.9287569,
+      "lon": -3.1978374,
+      "category": "hospital",
+      "index": "332bcfcc5ea896da821d0db51f5f8ece230af4cf7f4e4d9b88fd9d3ab07f40c7",
+      "capacity": 21
+    },
+    {
+      "name": "Spire Murrayfield Hospital",
+      "lat": 55.9437762,
+      "lon": -3.2640546,
+      "category": "hospital",
+      "index": "d0cb99a458dcaa60aa0c37f0ebfd234c0e47c318c5b18685686c46faf961604c",
+      "capacity": 27
+    },
+    {
+      "name": "Woodburn House NHS",
+      "lat": 55.9275212,
+      "lon": -3.2024259,
+      "category": "hospital",
+      "index": "33e8422967a3a3145541ac7c3e200b8aa9c4dc3eac880cef28d26de63f06a1e3",
+      "capacity": 13
+    },
+    {
+      "name": "Western General Hospital (Edinburgh)",
+      "lat": 55.9623853,
+      "lon": -3.2347813,
+      "category": "hospital",
+      "index": "fbef7efcead867c12201a132896d09f06342f2b1dcaf424f5974546f810f0b7a",
+      "capacity": 51
+    },
+    {
+      "name": "Fettes Police Station",
+      "lat": 55.9605377,
+      "lon": -3.2255329,
+      "category": "police",
+      "index": "f8f33a56928be51d0cda6453eb3652d08e3d7c72833a71774ff6d108273e7402",
+      "capacity": 4
+    },
+    {
+      "name": "Oxgangs Police Station",
+      "lat": 55.9076375,
+      "lon": -3.2280705,
+      "category": "police",
+      "index": "261bc86da97dcb1cea06ee4f905f78e55b8cc15dc04c39b613577bec7f6d004e",
+      "capacity": 6
+    },
+    {
+      "name": "Corstorphine Police Station",
+      "lat": 55.9404662,
+      "lon": -3.2927628,
+      "category": "police",
+      "index": "d7e92ff7a22f6ba78fc15db34cd3baaa745e298e0f52d237320002b2e3741236",
+      "capacity": 7
+    },
+    {
+      "name": "Royal Infirmary of Edinburgh (Little France)",
+      "lat": 55.9221695,
+      "lon": -3.1345976,
+      "category": "hospital",
+      "index": "ecf91dbabb92474de72243f909d89b1e6febd13c658f0654b8e5985f34310cd1",
+      "capacity": 53
+    },
+    {
+      "name": "Crewe Toll Fire Station",
+      "lat": 55.9679911,
+      "lon": -3.237495,
+      "category": "fire",
+      "index": "0f4b0dc6f6da22a467b8d3841437c25069a0c3fb33bdecdd9f21d8d6c43fe6a3",
+      "capacity": 2
+    },
+    {
+      "name": "Wester Hailes Police Station",
+      "lat": 55.9186036,
+      "lon": -3.2728675,
+      "category": "police",
+      "index": "743fff24f37d14121147965b6da549c2c40d6f62f60fa625612ccf0025306791",
+      "capacity": 5
+    },
+    {
+      "name": "Royal Edinburgh Hospital",
+      "lat": 55.9275818,
+      "lon": -3.2182639,
+      "category": "hospital",
+      "index": "22224a206429e6b85b94eaa54b929abc749969ad3cb710fd8fddbd94bece0b1e",
+      "capacity": 22
+    },
+    {
+      "name": "Royal Hospital for Children and Young People",
+      "lat": 55.9208958,
+      "lon": -3.1395955,
+      "category": "hospital",
+      "index": "f47e67c9c14c608a5700784c6b39121ca510417eb78896b66395dd25759a5fe9",
+      "capacity": 33
+    },
+    {
+      "name": "McDonald Road Community Fire & Ambulance Station",
+      "lat": 55.9638684,
+      "lon": -3.1844406,
+      "category": "fire",
+      "index": "6f842ea16d046cd10fcb9081a580265c260b08949e8bad55def9d8e2c7ac66d2",
+      "capacity": 4
+    },
+    {
+      "name": "Craigmillar Police Station",
+      "lat": 55.9333274,
+      "lon": -3.1404148,
+      "category": "police",
+      "index": "f14ef1cfcec6387906c6726e638327f4cecc490244a701f1e8948e8b105b5cf7",
+      "capacity": 5
+    },
+    {
+      "name": "Unnamed Police Station",
+      "lat": 55.9604795,
+      "lon": -3.2263285,
+      "category": "police",
+      "index": "a1cfe1ed4f29fb01d3fabf6340fa444c6df2c8ef1eaf8a7dd5f79986e14514e3",
+      "capacity": 3
+    },
+    {
+      "name": "Sighthill Community Fire Station",
+      "lat": 55.9236946,
+      "lon": -3.2849215,
+      "category": "fire",
+      "index": "f8b0733c3cbb03f37725d10b1f74aa6633e30c0e91f8183089901dcc57f2df0a",
+      "capacity": 3
+    },
+    {
+      "name": "Marionville Community Fire Station",
+      "lat": 55.9574754,
+      "lon": -3.1501365,
+      "category": "fire",
+      "index": "5447d36448ade210fbae4271f9dc4bd371116d72a26188607b7de613691ab507",
+      "capacity": 4
+    },
+    {
+      "name": "Liberton Fire Station",
+      "lat": 55.919029,
+      "lon": -3.1650873,
+      "category": "fire",
+      "index": "3edc91e6e4c19cd56797aa0267dbdc16613323a2af6a7c28022829b63ccfdd89",
+      "capacity": 2
+    },
+    {
+      "name": "Howdenhall Police Station",
+      "lat": 55.9043999,
+      "lon": -3.164961,
+      "category": "police",
+      "index": "993884c2a050b9e0561345db19ba441b77c6a7ffa5b47ea0f2a4340b6245014c",
+      "capacity": 3
+    },
+    {
+      "name": "Ellen's Glen Community Hospital",
+      "lat": 55.9094642,
+      "lon": -3.1494516,
+      "category": "hospital",
+      "index": "ddc91f25a7096e35af3197f3202653e46178cd1974cde21a090cce99e57f25d7",
+      "capacity": 17
+    },
+    {
+      "name": "Chalmers Centre",
+      "lat": 55.9445195,
+      "lon": -3.1983556,
+      "category": "hospital",
+      "index": "6bac466bf80d36b79aa3bab670774df060105f804dc5632e652efcff6a167344",
+      "capacity": 17
+    },
+    {
+      "name": "Princess Alexandra Eye Pavilion",
+      "lat": 55.94412,
+      "lon": -3.1981965,
+      "category": "hospital",
+      "index": "a1d166f0a815b678e2cdb698c2a1868b574ed136a0e5643e7812d9bcd22cb3c1",
+      "capacity": 12
+    },
+    {
+      "name": "Lauriston Building",
+      "lat": 55.9443708,
+      "lon": -3.1967679,
+      "category": "hospital",
+      "index": "75751723ed5d08639449e5cd8f07f4101d77caa506e77d6938a7815fb30318b9",
+      "capacity": 30
+    },
+    {
+      "name": "Findlay House",
+      "lat": 55.9680261,
+      "lon": -3.1442661,
+      "category": "hospital",
+      "index": "7175f5a74f14b9158ac68cac1a8c6b1e8ca41cf51458d6388c971eb2c1e46c61",
+      "capacity": 20
+    },
+    {
+      "name": "Gayfield Square Police Station",
+      "lat": 55.9585989,
+      "lon": -3.1857381,
+      "category": "police",
+      "index": "c7005fe6c3bfa57b5e5dce72c7d1274485a839295923ef70e9f0816e31ff64ec",
+      "capacity": 7
+    },
+    {
+      "name": "Tollcross Fire Station",
+      "lat": 55.9436795,
+      "lon": -3.2051381,
+      "category": "fire",
+      "index": "8b847e285e33bd664a9087b16b5460fd1ac8aab280042c04b36e454eb5a2c792",
+      "capacity": 2
+    },
+    {
+      "name": "St Leonard's Police Station and Divisional Headquarters",
+      "lat": 55.9431625,
+      "lon": -3.1790247,
+      "category": "police",
+      "index": "15098e1ddd186fc9567ad81c2fef82e881245efa992663659832d6942784064e",
+      "capacity": 4
+    }
+  ]
 }

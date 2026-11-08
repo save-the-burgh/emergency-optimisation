@@ -1,635 +1,368 @@
 {
   "incident_sites": [
     {
-      "id": "I001",
-      "name": "Road traffic collision, Niddrie Mains Road",
-      "address": {
-        "street": "Niddrie Mains Road",
-        "area": "Craigmillar",
-        "city": "Edinburgh",
-        "postcode": "EH16 4BG",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Niddrie Mains Road, Craigmillar, Edinburgh, EH16 4BG",
-      "category": "incident_site",
-      "incident_type": "road_collision",
-      "description": "Pedestrian struck by vehicle",
-      "severity": "slight",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": false
-      },
-      "required_services": [
-        "hospital",
-        "police_service"
-      ],
-      "priority_service": "hospital"
+      "id": "A1",
+      "lat": 55.94475987589205,
+      "lon": -3.2949978489554663,
+      "category": "fire",
+      "distances": [
+        {
+          "index": "f8b0733c3cbb03f37725d10b1f74aa6633e30c0e91f8183089901dcc57f2df0a",
+          "name": "Sighthill Community Fire Station",
+          "capacity": 3,
+          "distance_km": 3.2
+        },
+        {
+          "index": "0f4b0dc6f6da22a467b8d3841437c25069a0c3fb33bdecdd9f21d8d6c43fe6a3",
+          "name": "Crewe Toll Fire Station",
+          "capacity": 2,
+          "distance_km": 5.1
+        },
+        {
+          "index": "8b847e285e33bd664a9087b16b5460fd1ac8aab280042c04b36e454eb5a2c792",
+          "name": "Tollcross Fire Station",
+          "capacity": 2,
+          "distance_km": 6.8
+        },
+        {
+          "index": "6f842ea16d046cd10fcb9081a580265c260b08949e8bad55def9d8e2c7ac66d2",
+          "name": "McDonald Road Community Fire & Ambulance Station",
+          "capacity": 4,
+          "distance_km": 8.9
+        },
+        {
+          "index": "3edc91e6e4c19cd56797aa0267dbdc16613323a2af6a7c28022829b63ccfdd89",
+          "name": "Liberton Fire Station",
+          "capacity": 2,
+          "distance_km": 10.4
+        },
+        {
+          "index": "5447d36448ade210fbae4271f9dc4bd371116d72a26188607b7de613691ab507",
+          "name": "Marionville Community Fire Station",
+          "capacity": 4,
+          "distance_km": 11.0
+        }
+      ]
     },
     {
-      "id": "I002",
-      "name": "Burglary / break-in, Queensferry Road",
-      "address": {
-        "street": "Queensferry Road",
-        "area": "Blackhall",
-        "city": "Edinburgh",
-        "postcode": "EH4 2BP",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Queensferry Road, Blackhall, Edinburgh, EH4 2BP",
-      "category": "incident_site",
-      "incident_type": "burglary",
-      "description": "Forced entry to flat, occupants absent",
-      "severity": "slight",
-      "responders": {
-        "ambulance": false,
-        "police": true,
-        "fire": false
-      },
-      "required_services": [
-        "police_service"
-      ],
-      "priority_service": "police_service"
+      "id": "A2",
+      "lat": 55.917142429766244,
+      "lon": -3.272092414294971,
+      "category": "police",
+      "distances": [
+        {
+          "index": "743fff24f37d14121147965b6da549c2c40d6f62f60fa625612ccf0025306791",
+          "name": "Wester Hailes Police Station",
+          "capacity": 5,
+          "distance_km": 1.0
+        },
+        {
+          "index": "d7e92ff7a22f6ba78fc15db34cd3baaa745e298e0f52d237320002b2e3741236",
+          "name": "Corstorphine Police Station",
+          "capacity": 7,
+          "distance_km": 3.5
+        },
+        {
+          "index": "261bc86da97dcb1cea06ee4f905f78e55b8cc15dc04c39b613577bec7f6d004e",
+          "name": "Oxgangs Police Station",
+          "capacity": 6,
+          "distance_km": 4.0
+        },
+        {
+          "index": "90273ffec0b6cf756817f4822ab056b2f2e9ace0591f713442d26d6ddcf882f7",
+          "name": "West End Police Station",
+          "capacity": 5,
+          "distance_km": 6.0
+        },
+        {
+          "index": "80029506918113d56b67272540dfd001937e817e25d439d78f164511fd97dfd8",
+          "name": "BTP Edinburgh Police Station",
+          "capacity": 6,
+          "distance_km": 6.1
+        },
+        {
+          "index": "f8f33a56928be51d0cda6453eb3652d08e3d7c72833a71774ff6d108273e7402",
+          "name": "Fettes Police Station",
+          "capacity": 4,
+          "distance_km": 7.0
+        },
+        {
+          "index": "a1cfe1ed4f29fb01d3fabf6340fa444c6df2c8ef1eaf8a7dd5f79986e14514e3",
+          "name": "Unnamed Police Station",
+          "capacity": 3,
+          "distance_km": 7.1
+        },
+        {
+          "index": "2ece3ac190644606634690ce1ebcfc5c908c8d760f54bbae3a80177078e951ec",
+          "name": "Drylaw Police Station",
+          "capacity": 5,
+          "distance_km": 7.5
+        },
+        {
+          "index": "15098e1ddd186fc9567ad81c2fef82e881245efa992663659832d6942784064e",
+          "name": "St Leonard's Police Station and Divisional Headquarters",
+          "capacity": 4,
+          "distance_km": 8.0
+        },
+        {
+          "index": "993884c2a050b9e0561345db19ba441b77c6a7ffa5b47ea0f2a4340b6245014c",
+          "name": "Howdenhall Police Station",
+          "capacity": 3,
+          "distance_km": 8.5
+        },
+        {
+          "index": "c7005fe6c3bfa57b5e5dce72c7d1274485a839295923ef70e9f0816e31ff64ec",
+          "name": "Gayfield Square Police Station",
+          "capacity": 7,
+          "distance_km": 9.0
+        },
+        {
+          "index": "f14ef1cfcec6387906c6726e638327f4cecc490244a701f1e8948e8b105b5cf7",
+          "name": "Craigmillar Police Station",
+          "capacity": 5,
+          "distance_km": 10.0
+        }
+      ]
     },
     {
-      "id": "I003",
-      "name": "Minor household injury, Raeburn Place",
-      "address": {
-        "street": "Raeburn Place",
-        "area": "Stockbridge",
-        "city": "Edinburgh",
-        "postcode": "EH4 1HX",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Raeburn Place, Stockbridge, Edinburgh, EH4 1HX",
-      "category": "incident_site",
-      "incident_type": "household_injury",
-      "description": "Foot laceration from broken glass",
-      "severity": "slight",
-      "responders": {
-        "ambulance": true,
-        "police": false,
-        "fire": false
-      },
-      "required_services": [
-        "hospital"
-      ],
-      "priority_service": "hospital"
+      "id": "A3",
+      "lat": 55.947368964119605,
+      "lon": -3.121564086459031,
+      "category": "police",
+      "distances": [
+        {
+          "index": "f14ef1cfcec6387906c6726e638327f4cecc490244a701f1e8948e8b105b5cf7",
+          "name": "Craigmillar Police Station",
+          "capacity": 5,
+          "distance_km": 2.5
+        },
+        {
+          "index": "15098e1ddd186fc9567ad81c2fef82e881245efa992663659832d6942784064e",
+          "name": "St Leonard's Police Station and Divisional Headquarters",
+          "capacity": 4,
+          "distance_km": 4.5
+        },
+        {
+          "index": "c7005fe6c3bfa57b5e5dce72c7d1274485a839295923ef70e9f0816e31ff64ec",
+          "name": "Gayfield Square Police Station",
+          "capacity": 7,
+          "distance_km": 5.0
+        },
+        {
+          "index": "993884c2a050b9e0561345db19ba441b77c6a7ffa5b47ea0f2a4340b6245014c",
+          "name": "Howdenhall Police Station",
+          "capacity": 3,
+          "distance_km": 7.0
+        },
+        {
+          "index": "90273ffec0b6cf756817f4822ab056b2f2e9ace0591f713442d26d6ddcf882f7",
+          "name": "West End Police Station",
+          "capacity": 5,
+          "distance_km": 7.1
+        },
+        {
+          "index": "80029506918113d56b67272540dfd001937e817e25d439d78f164511fd97dfd8",
+          "name": "BTP Edinburgh Police Station",
+          "capacity": 6,
+          "distance_km": 7.2
+        },
+        {
+          "index": "f8f33a56928be51d0cda6453eb3652d08e3d7c72833a71774ff6d108273e7402",
+          "name": "Fettes Police Station",
+          "capacity": 4,
+          "distance_km": 8.0
+        },
+        {
+          "index": "a1cfe1ed4f29fb01d3fabf6340fa444c6df2c8ef1eaf8a7dd5f79986e14514e3",
+          "name": "Unnamed Police Station",
+          "capacity": 3,
+          "distance_km": 8.1
+        },
+        {
+          "index": "2ece3ac190644606634690ce1ebcfc5c908c8d760f54bbae3a80177078e951ec",
+          "name": "Drylaw Police Station",
+          "capacity": 5,
+          "distance_km": 10.0
+        },
+        {
+          "index": "261bc86da97dcb1cea06ee4f905f78e55b8cc15dc04c39b613577bec7f6d004e",
+          "name": "Oxgangs Police Station",
+          "capacity": 6,
+          "distance_km": 10.1
+        },
+        {
+          "index": "743fff24f37d14121147965b6da549c2c40d6f62f60fa625612ccf0025306791",
+          "name": "Wester Hailes Police Station",
+          "capacity": 5,
+          "distance_km": 12.0
+        },
+        {
+          "index": "d7e92ff7a22f6ba78fc15db34cd3baaa745e298e0f52d237320002b2e3741236",
+          "name": "Corstorphine Police Station",
+          "capacity": 7,
+          "distance_km": 13.0
+        }
+      ]
     },
     {
-      "id": "I004",
-      "name": "Gas leak / explosion, Crewe Road South",
-      "address": {
-        "street": "Crewe Road South",
-        "area": "Craigleith",
-        "city": "Edinburgh",
-        "postcode": "EH4 2XU",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Crewe Road South, Craigleith, Edinburgh, EH4 2XU",
-      "category": "incident_site",
-      "incident_type": "gas_leak_explosion",
-      "description": "Major gas leak, street evacuated",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
+      "id": "A4",
+      "lat": 55.94133447587143,
+      "lon": -3.293643464103643,
+      "category": "police",
+      "distances": [
+        {
+          "index": "d7e92ff7a22f6ba78fc15db34cd3baaa745e298e0f52d237320002b2e3741236",
+          "name": "Corstorphine Police Station",
+          "capacity": 7,
+          "distance_km": 0.5
+        },
+        {
+          "index": "743fff24f37d14121147965b6da549c2c40d6f62f60fa625612ccf0025306791",
+          "name": "Wester Hailes Police Station",
+          "capacity": 5,
+          "distance_km": 3.5
+        },
+        {
+          "index": "2ece3ac190644606634690ce1ebcfc5c908c8d760f54bbae3a80177078e951ec",
+          "name": "Drylaw Police Station",
+          "capacity": 5,
+          "distance_km": 5.0
+        },
+        {
+          "index": "90273ffec0b6cf756817f4822ab056b2f2e9ace0591f713442d26d6ddcf882f7",
+          "name": "West End Police Station",
+          "capacity": 5,
+          "distance_km": 6.0
+        },
+        {
+          "index": "80029506918113d56b67272540dfd001937e817e25d439d78f164511fd97dfd8",
+          "name": "BTP Edinburgh Police Station",
+          "capacity": 6,
+          "distance_km": 6.1
+        },
+        {
+          "index": "f8f33a56928be51d0cda6453eb3652d08e3d7c72833a71774ff6d108273e7402",
+          "name": "Fettes Police Station",
+          "capacity": 4,
+          "distance_km": 6.3
+        },
+        {
+          "index": "a1cfe1ed4f29fb01d3fabf6340fa444c6df2c8ef1eaf8a7dd5f79986e14514e3",
+          "name": "Unnamed Police Station",
+          "capacity": 3,
+          "distance_km": 6.4
+        },
+        {
+          "index": "261bc86da97dcb1cea06ee4f905f78e55b8cc15dc04c39b613577bec7f6d004e",
+          "name": "Oxgangs Police Station",
+          "capacity": 6,
+          "distance_km": 7.0
+        },
+        {
+          "index": "c7005fe6c3bfa57b5e5dce72c7d1274485a839295923ef70e9f0816e31ff64ec",
+          "name": "Gayfield Square Police Station",
+          "capacity": 7,
+          "distance_km": 9.0
+        },
+        {
+          "index": "15098e1ddd186fc9567ad81c2fef82e881245efa992663659832d6942784064e",
+          "name": "St Leonard's Police Station and Divisional Headquarters",
+          "capacity": 4,
+          "distance_km": 9.1
+        },
+        {
+          "index": "993884c2a050b9e0561345db19ba441b77c6a7ffa5b47ea0f2a4340b6245014c",
+          "name": "Howdenhall Police Station",
+          "capacity": 3,
+          "distance_km": 11.0
+        },
+        {
+          "index": "f14ef1cfcec6387906c6726e638327f4cecc490244a701f1e8948e8b105b5cf7",
+          "name": "Craigmillar Police Station",
+          "capacity": 5,
+          "distance_km": 12.0
+        }
+      ]
     },
     {
-      "id": "I005",
-      "name": "Industrial / construction accident, Portobello High Street",
-      "address": {
-        "street": "Portobello High Street",
-        "area": "Portobello",
-        "city": "Edinburgh",
-        "postcode": "EH15 2AR",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Portobello High Street, Portobello, Edinburgh, EH15 2AR",
-      "category": "incident_site",
-      "incident_type": "industrial_accident",
-      "description": "Worker trapped under collapsed scaffolding",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I006",
-      "name": "Building fire, Corstorphine Road",
-      "address": {
-        "street": "Corstorphine Road",
-        "area": "Corstorphine",
-        "city": "Edinburgh",
-        "postcode": "EH12 6TS",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Corstorphine Road, Corstorphine, Edinburgh, EH12 6TS",
-      "category": "incident_site",
-      "incident_type": "building_fire",
-      "description": "Industrial unit fire",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I007",
-      "name": "Minor household injury, Seafield Road",
-      "address": {
-        "street": "Seafield Road",
-        "area": "Seafield",
-        "city": "Edinburgh",
-        "postcode": null,
-        "country": "Scotland, UK"
-      },
-      "full_address": "Seafield Road, Seafield, Edinburgh",
-      "category": "incident_site",
-      "incident_type": "household_injury",
-      "description": "Hot water scald to forearm",
-      "severity": "slight",
-      "responders": {
-        "ambulance": true,
-        "police": false,
-        "fire": false
-      },
-      "required_services": [
-        "hospital"
-      ],
-      "priority_service": "hospital"
-    },
-    {
-      "id": "I008",
-      "name": "Medical emergency, Lasswade Road",
-      "address": {
-        "street": "Lasswade Road",
-        "area": "Liberton",
-        "city": "Edinburgh",
-        "postcode": "EH16 6PT",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Lasswade Road, Liberton, Edinburgh, EH16 6PT",
-      "category": "incident_site",
-      "incident_type": "medical_emergency",
-      "description": "Collapsed person in street",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": false,
-        "fire": false
-      },
-      "required_services": [
-        "hospital"
-      ],
-      "priority_service": "hospital"
-    },
-    {
-      "id": "I009",
-      "name": "Road traffic collision, Cowgate",
-      "address": {
-        "street": "Cowgate",
-        "area": "Old Town",
-        "city": "Edinburgh",
-        "postcode": null,
-        "country": "Scotland, UK"
-      },
-      "full_address": "Cowgate, Old Town, Edinburgh",
-      "category": "incident_site",
-      "incident_type": "road_collision",
-      "description": "Multi-vehicle collision, casualties trapped",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "hospital"
-    },
-    {
-      "id": "I010",
-      "name": "Industrial / construction accident, Old Dalkeith Road",
-      "address": {
-        "street": "Old Dalkeith Road",
-        "area": "Little France",
-        "city": "Edinburgh",
-        "postcode": "EH16 4TL",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Old Dalkeith Road, Little France, Edinburgh, EH16 4TL",
-      "category": "incident_site",
-      "incident_type": "industrial_accident",
-      "description": "Chemical spill with injured staff",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I011",
-      "name": "Water rescue, Lanark Road West",
-      "address": {
-        "street": "Lanark Road West",
-        "area": "Currie",
-        "city": "Edinburgh",
-        "postcode": "EH14 5NX",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Lanark Road West, Currie, Edinburgh, EH14 5NX",
-      "category": "incident_site",
-      "incident_type": "water_rescue",
-      "description": "Vehicle in water, occupants trapped",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I012",
-      "name": "Industrial / construction accident, Calder Road",
-      "address": {
-        "street": "Calder Road",
-        "area": "Sighthill",
-        "city": "Edinburgh",
-        "postcode": "EH11 4BJ",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Calder Road, Sighthill, Edinburgh, EH11 4BJ",
-      "category": "incident_site",
-      "incident_type": "industrial_accident",
-      "description": "Chemical spill with injured staff",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I013",
-      "name": "Water rescue, Dalry Road",
-      "address": {
-        "street": "Dalry Road",
-        "area": "Dalry",
-        "city": "Edinburgh",
-        "postcode": "EH11 2AB",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Dalry Road, Dalry, Edinburgh, EH11 2AB",
-      "category": "incident_site",
-      "incident_type": "water_rescue",
-      "description": "Vehicle in water, occupants trapped",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I014",
-      "name": "Gas leak / explosion, Lothian Road",
-      "address": {
-        "street": "Lothian Road",
-        "area": "Tollcross",
-        "city": "Edinburgh",
-        "postcode": "EH1 2EA",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Lothian Road, Tollcross, Edinburgh, EH1 2EA",
-      "category": "incident_site",
-      "incident_type": "gas_leak_explosion",
-      "description": "Major gas leak, street evacuated",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I015",
-      "name": "Road traffic collision, Princes Street",
-      "address": {
-        "street": "Princes Street",
-        "area": "West End",
-        "city": "Edinburgh",
-        "postcode": null,
-        "country": "Scotland, UK"
-      },
-      "full_address": "Princes Street, West End, Edinburgh",
-      "category": "incident_site",
-      "incident_type": "road_collision",
-      "description": "Vehicle overturned on carriageway",
-      "severity": "slight",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": false
-      },
-      "required_services": [
-        "hospital",
-        "police_service"
-      ],
-      "priority_service": "hospital"
-    },
-    {
-      "id": "I016",
-      "name": "Building fire, Lanark Road",
-      "address": {
-        "street": "Lanark Road",
-        "area": "Juniper Green",
-        "city": "Edinburgh",
-        "postcode": null,
-        "country": "Scotland, UK"
-      },
-      "full_address": "Lanark Road, Juniper Green, Edinburgh",
-      "category": "incident_site",
-      "incident_type": "building_fire",
-      "description": "Flat fire in residential tenement",
-      "severity": "slight",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I017",
-      "name": "Burglary / break-in, Ferry Road",
-      "address": {
-        "street": "Ferry Road",
-        "area": "Granton",
-        "city": "Edinburgh",
-        "postcode": "EH4 4AQ",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Ferry Road, Granton, Edinburgh, EH4 4AQ",
-      "category": "incident_site",
-      "incident_type": "burglary",
-      "description": "Forced entry to flat, occupants absent",
-      "severity": "serious",
-      "responders": {
-        "ambulance": false,
-        "police": true,
-        "fire": false
-      },
-      "required_services": [
-        "police_service"
-      ],
-      "priority_service": "police_service"
-    },
-    {
-      "id": "I018",
-      "name": "Industrial / construction accident, Dalkeith Road",
-      "address": {
-        "street": "Dalkeith Road",
-        "area": "Newington",
-        "city": "Edinburgh",
-        "postcode": "EH16 5BB",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Dalkeith Road, Newington, Edinburgh, EH16 5BB",
-      "category": "incident_site",
-      "incident_type": "industrial_accident",
-      "description": "Worker trapped under collapsed scaffolding",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I019",
-      "name": "Water rescue, Gilmerton Road",
-      "address": {
-        "street": "Gilmerton Road",
-        "area": "Gilmerton",
-        "city": "Edinburgh",
-        "postcode": null,
-        "country": "Scotland, UK"
-      },
-      "full_address": "Gilmerton Road, Gilmerton, Edinburgh",
-      "category": "incident_site",
-      "incident_type": "water_rescue",
-      "description": "Vehicle in water, occupants trapped",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I020",
-      "name": "Water rescue, Great Junction Street",
-      "address": {
-        "street": "Great Junction Street",
-        "area": "Leith",
-        "city": "Edinburgh",
-        "postcode": "EH6 5LD",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Great Junction Street, Leith, Edinburgh, EH6 5LD",
-      "category": "incident_site",
-      "incident_type": "water_rescue",
-      "description": "Vehicle in water, occupants trapped",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": true
-      },
-      "required_services": [
-        "hospital",
-        "police_service",
-        "fire_service"
-      ],
-      "priority_service": "fire_service"
-    },
-    {
-      "id": "I021",
-      "name": "Medical emergency, Marchmont Road",
-      "address": {
-        "street": "Marchmont Road",
-        "area": "Marchmont",
-        "city": "Edinburgh",
-        "postcode": null,
-        "country": "Scotland, UK"
-      },
-      "full_address": "Marchmont Road, Marchmont, Edinburgh",
-      "category": "incident_site",
-      "incident_type": "medical_emergency",
-      "description": "Cardiac arrest at home",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": false,
-        "fire": false
-      },
-      "required_services": [
-        "hospital"
-      ],
-      "priority_service": "hospital"
-    },
-    {
-      "id": "I022",
-      "name": "Violent assault, Easter Road",
-      "address": {
-        "street": "Easter Road",
-        "area": "Easter Road",
-        "city": "Edinburgh",
-        "postcode": null,
-        "country": "Scotland, UK"
-      },
-      "full_address": "Easter Road, Easter Road, Edinburgh",
-      "category": "incident_site",
-      "incident_type": "assault",
-      "description": "Stabbing outside licensed premises",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": false
-      },
-      "required_services": [
-        "hospital",
-        "police_service"
-      ],
-      "priority_service": "hospital"
-    },
-    {
-      "id": "I023",
-      "name": "Violent assault, Nicolson Street",
-      "address": {
-        "street": "Nicolson Street",
-        "area": "Southside",
-        "city": "Edinburgh",
-        "postcode": "EH8 9FT",
-        "country": "Scotland, UK"
-      },
-      "full_address": "Nicolson Street, Southside, Edinburgh, EH8 9FT",
-      "category": "incident_site",
-      "incident_type": "assault",
-      "description": "Serious assault, suspect at large",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": false
-      },
-      "required_services": [
-        "hospital",
-        "police_service"
-      ],
-      "priority_service": "hospital"
-    },
-    {
-      "id": "I024",
-      "name": "Violent assault, Broughton Street",
-      "address": {
-        "street": "Broughton Street",
-        "area": "Broughton",
-        "city": "Edinburgh",
-        "postcode": null,
-        "country": "Scotland, UK"
-      },
-      "full_address": "Broughton Street, Broughton, Edinburgh",
-      "category": "incident_site",
-      "incident_type": "assault",
-      "description": "Stabbing outside licensed premises",
-      "severity": "serious",
-      "responders": {
-        "ambulance": true,
-        "police": true,
-        "fire": false
-      },
-      "required_services": [
-        "hospital",
-        "police_service"
-      ],
-      "priority_service": "hospital"
+      "id": "A5",
+      "lat": 55.91530465823625,
+      "lon": -3.1989289423793275,
+      "category": "police",
+      "distances": [
+        {
+          "index": "261bc86da97dcb1cea06ee4f905f78e55b8cc15dc04c39b613577bec7f6d004e",
+          "name": "Oxgangs Police Station",
+          "capacity": 6,
+          "distance_km": 2.5
+        },
+        {
+          "index": "993884c2a050b9e0561345db19ba441b77c6a7ffa5b47ea0f2a4340b6245014c",
+          "name": "Howdenhall Police Station",
+          "capacity": 3,
+          "distance_km": 3.0
+        },
+        {
+          "index": "15098e1ddd186fc9567ad81c2fef82e881245efa992663659832d6942784064e",
+          "name": "St Leonard's Police Station and Divisional Headquarters",
+          "capacity": 4,
+          "distance_km": 4.0
+        },
+        {
+          "index": "90273ffec0b6cf756817f4822ab056b2f2e9ace0591f713442d26d6ddcf882f7",
+          "name": "West End Police Station",
+          "capacity": 5,
+          "distance_km": 4.5
+        },
+        {
+          "index": "80029506918113d56b67272540dfd001937e817e25d439d78f164511fd97dfd8",
+          "name": "BTP Edinburgh Police Station",
+          "capacity": 6,
+          "distance_km": 4.6
+        },
+        {
+          "index": "f14ef1cfcec6387906c6726e638327f4cecc490244a701f1e8948e8b105b5cf7",
+          "name": "Craigmillar Police Station",
+          "capacity": 5,
+          "distance_km": 5.0
+        },
+        {
+          "index": "743fff24f37d14121147965b6da549c2c40d6f62f60fa625612ccf0025306791",
+          "name": "Wester Hailes Police Station",
+          "capacity": 5,
+          "distance_km": 6.0
+        },
+        {
+          "index": "c7005fe6c3bfa57b5e5dce72c7d1274485a839295923ef70e9f0816e31ff64ec",
+          "name": "Gayfield Square Police Station",
+          "capacity": 7,
+          "distance_km": 6.1
+        },
+        {
+          "index": "f8f33a56928be51d0cda6453eb3652d08e3d7c72833a71774ff6d108273e7402",
+          "name": "Fettes Police Station",
+          "capacity": 4,
+          "distance_km": 7.0
+        },
+        {
+          "index": "a1cfe1ed4f29fb01d3fabf6340fa444c6df2c8ef1eaf8a7dd5f79986e14514e3",
+          "name": "Unnamed Police Station",
+          "capacity": 3,
+          "distance_km": 7.1
+        },
+        {
+          "index": "2ece3ac190644606634690ce1ebcfc5c908c8d760f54bbae3a80177078e951ec",
+          "name": "Drylaw Police Station",
+          "capacity": 5,
+          "distance_km": 8.0
+        },
+        {
+          "index": "d7e92ff7a22f6ba78fc15db34cd3baaa745e298e0f52d237320002b2e3741236",
+          "name": "Corstorphine Police Station",
+          "capacity": 7,
+          "distance_km": 8.1
+        }
+      ]
     }
   ]
 }
