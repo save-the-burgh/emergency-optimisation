@@ -123,7 +123,12 @@ def _parse_osm_elements(elements):
         if not (category and lat and lon):
             continue
 
-        name = tags.get("name") or f"Unnamed {category[:-1]}"
+        fallback_names = {
+            "hospital": "Unnamed hospital",
+            "fire": "Unnamed fire station",
+            "police": "Unnamed police station",
+        }
+        name = tags.get("name") or fallback_names[category]
         centers.append(add_service_site_metadata({
             "name": name,
             "lat": lat,
