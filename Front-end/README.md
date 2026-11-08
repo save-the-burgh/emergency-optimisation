@@ -3,6 +3,10 @@
 
 Run via `python -m streamlit run dynamicapp.py`.
 
+Install the pinned Python packages first with
+`python -m pip install -r requirements.txt`. The requirements file was generated
+from the active Python environment with `python -m pip freeze`.
+
 For local Auth0 login, copy `.streamlit/secrets.toml.example` to
 `.streamlit/secrets.toml` and replace the placeholder values with your Auth0
 application credentials. Configure `http://localhost:8501` as an allowed
