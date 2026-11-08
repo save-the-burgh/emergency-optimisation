@@ -66,7 +66,4 @@ def build_dispatch_map(centers, accidents, selected_accident_id,
                 ),
             ).add_to(city_map)
 
-
-
-
     return city_map

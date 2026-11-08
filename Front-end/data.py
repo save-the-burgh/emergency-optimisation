@@ -5,6 +5,7 @@ from pathlib import Path
 import requests
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
+import numpy as np
 
 
 OVERPASS_URLS = [
@@ -180,16 +181,24 @@ def fetch_city_data(city_name):
         "centers": centers,
     }
 
-def generate_random_accidents(bounds, n=5, seed=None):
+def generate_random_accidents(bounds, n=5, seed=42):
     """Generate n random accident locations within a city's bounding box."""
-    if seed is not None:
-        random.seed(seed)
-    accidents = []
+    #if seed is not None:
     categories = ["police", "fire", "hospital"]
-    random.shuffle(categories)
+    #random.shuffle(categories)
+    random.seed(seed)
+    accidents = []
+    #random.shuffle(categories)
+    lat_mean = (bounds["lat_min"] + bounds["lat_max"]) / 2
+    lat_sigma = np.std([bounds["lat_min"], bounds["lat_max"]])
+    lon_mean = (bounds["lon_min"] + bounds["lon_max"]) / 2
+    lon_sigma = np.std([bounds["lon_min"], bounds["lon_max"]])
     for i in range(n):
-        lat = random.uniform(bounds["lat_min"], bounds["lat_max"])
-        lon = random.uniform(bounds["lon_min"], bounds["lon_max"])
+        lat = random.normalvariate(mu=lat_mean, sigma=lat_sigma)
+
+        lon = random.normalvariate(mu=lon_mean, sigma=lon_sigma)
+        
+        #lon = random.uniform(bounds["lon_min"], bounds["lon_max"])
         cat = categories[i] if i < len(categories) else random.choice(categories)
         accidents.append({"id": f"A{i+1}", "lat": lat, "lon": lon, "category": cat})
     return accidents

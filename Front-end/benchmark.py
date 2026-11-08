@@ -86,7 +86,7 @@ def nearest_center_baseline(incidents, centers):
 
 def generate_hotspot_incidents(centers, seed, n_incidents=20):
     """Build a reproducible synthetic hotspot using straight-line distances."""
-    rng = random.Random(seed)
+    rng = random.Random(42)
     centers_by_category = {}
     for center in centers:
         centers_by_category.setdefault(center["category"], []).append(center)

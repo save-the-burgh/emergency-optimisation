@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from streamlit_folium import st_folium
+from streamlit_folium import folium_static
 
 from map_builder import build_dispatch_map
 from data import (
@@ -30,7 +30,11 @@ N_INCIDENTS=10
 save_jsons = True
 user = get_current_user()
 
-st.title("Emergency Dispatch Simulator")
+# st.title("Save the Burgh")
+st.markdown(
+    "<h1 style='text-align: center;'>Save the Burgh</h1>",
+    unsafe_allow_html=True,
+)
 
 VEHICLE_TO_CATEGORY = {
     "Ambulances": "hospital",
@@ -113,7 +117,7 @@ if submitted and new_city_name.strip():
                     f"or check the spelling. ({exc})"
                 )
 
-city_name = st.sidebar.selectbox("Select a city", sorted(st.session_state.cities.keys()))
+city_name = st.sidebar.selectbox("Select a city", sorted(st.session_state.cities.keys(), reverse=True))
 city_data = st.session_state.cities[city_name]
 
 all_centers = city_data["centers"]
@@ -192,7 +196,7 @@ with tab_map:
         all_centers, accidents, selected_accident_id,
         visible_categories, center=map_center, assignments=city_fleet["assignments"],
     )
-    st_folium(city_map, width=1200, height=700)
+    folium_static(city_map, width=1200, height=700)
 
 with tab_fleet:
     if not user:
@@ -353,7 +357,7 @@ with tab_fleet:
         st.warning(warning)
 
 with tab_analytics:
-    st.subheader("Vehicle Distribution by Center")
+    #st.subheader("Vehicle Distribution by Center")
 
     if city_fleet["assignments"]:
         fig = px.bar(
@@ -364,8 +368,8 @@ with tab_analytics:
         )
         fig.update_layout(xaxis_tickangle=-45)
         st.plotly_chart(fig, use_container_width=True)
-    else:
-        st.info("Run the optimizer or manually assign vehicles to see this chart.")
+    #else:
+       # st.info("Run the optimizer or manually assign vehicles to see this chart.")
 
     st.subheader("Incident Distances to Nearest Matching Service")
     if accidents:

@@ -2,379 +2,194 @@
   "incident_sites": [
     {
       "id": "A1",
-      "lat": 51.85250107552227,
-      "lon": -8.508745602244632,
+      "lat": 51.843800676325536,
+      "lon": -8.610138841744202,
       "category": "fire",
       "distances": [
+        {
+          "index": "S12",
+          "name": "Ballyvolane Fire Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 14.79
+        },
         {
           "index": "S2",
           "name": "Unnamed Fire Station",
           "category": "fire",
           "capacity": 2,
-          "distance_km": 8.92
+          "distance_km": 14.89
         },
         {
           "index": "S19",
           "name": "Anglesea Street Fire Station",
           "category": "fire",
           "capacity": 3,
-          "distance_km": 8.92
-        },
-        {
-          "index": "S12",
-          "name": "Ballyvolane Fire Station",
-          "category": "fire",
-          "capacity": 4,
-          "distance_km": 9.1
+          "distance_km": 14.89
         }
       ]
     },
     {
       "id": "A2",
-      "lat": 51.87232107381488,
-      "lon": -8.4395293178754,
+      "lat": 52.04057302087933,
+      "lon": -8.566936254571303,
       "category": "police",
       "distances": [
         {
-          "index": "S9",
-          "name": "Douglas Garda Station",
-          "category": "police",
-          "capacity": 5,
-          "distance_km": 1.36
-        },
-        {
-          "index": "S11",
-          "name": "Blackrock Garda Station",
-          "category": "police",
-          "capacity": 6,
-          "distance_km": 4.67
-        },
-        {
-          "index": "S13",
-          "name": "Togher Garda Station",
-          "category": "police",
-          "capacity": 8,
-          "distance_km": 4.69
-        },
-        {
-          "index": "S17",
-          "name": "Anglesea Street Garda Station",
+          "index": "S14",
+          "name": "Gurranabraher Garda Station",
           "category": "police",
           "capacity": 3,
-          "distance_km": 5.68
-        },
-        {
-          "index": "S18",
-          "name": "Unnamed Police Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 6.15
-        },
-        {
-          "index": "S15",
-          "name": "Bishopstown Garda Station",
-          "category": "police",
-          "capacity": 8,
-          "distance_km": 6.81
+          "distance_km": 21.44
         },
         {
           "index": "S16",
           "name": "Bridewell Garda Station",
           "category": "police",
           "capacity": 3,
-          "distance_km": 6.97
+          "distance_km": 21.78
         },
         {
-          "index": "S14",
-          "name": "Gurranabraher Garda Station",
+          "index": "S18",
+          "name": "Unnamed Police Station",
           "category": "police",
           "capacity": 3,
-          "distance_km": 8.98
+          "distance_km": 22.58
+        },
+        {
+          "index": "S17",
+          "name": "Anglesea Street Garda Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 22.68
         },
         {
           "index": "S8",
           "name": "Mayfield Garda Station",
           "category": "police",
           "capacity": 3,
-          "distance_km": 9.32
+          "distance_km": 24.05
+        },
+        {
+          "index": "S13",
+          "name": "Togher Garda Station",
+          "category": "police",
+          "capacity": 8,
+          "distance_km": 25.24
+        },
+        {
+          "index": "S15",
+          "name": "Bishopstown Garda Station",
+          "category": "police",
+          "capacity": 8,
+          "distance_km": 25.75
+        },
+        {
+          "index": "S11",
+          "name": "Blackrock Garda Station",
+          "category": "police",
+          "capacity": 6,
+          "distance_km": 27.04
+        },
+        {
+          "index": "S9",
+          "name": "Douglas Garda Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 28.31
         }
       ]
     },
     {
       "id": "A3",
-      "lat": 51.917669948742294,
-      "lon": -8.416173064844273,
+      "lat": 51.900471879040786,
+      "lon": -8.585674680573714,
       "category": "hospital",
       "distances": [
         {
-          "index": "S1",
-          "name": "South Infirmary-Victoria University Hospital",
-          "category": "hospital",
-          "capacity": 42,
-          "distance_km": 5.26
-        },
-        {
-          "index": "S4",
-          "name": "Saint Finbarr's Hospital",
-          "category": "hospital",
-          "capacity": 28,
-          "distance_km": 6.05
-        },
-        {
-          "index": "S10",
-          "name": "Mercy University Hospital",
-          "category": "hospital",
-          "capacity": 22,
-          "distance_km": 6.16
-        },
-        {
-          "index": "S3",
-          "name": "Saint Mary's Health Campus",
+          "index": "S7",
+          "name": "Cork University Hospital",
           "category": "hospital",
           "capacity": 21,
-          "distance_km": 6.87
+          "distance_km": 6.55
         },
         {
           "index": "S5",
           "name": "Bon Secours Hospital",
           "category": "hospital",
           "capacity": 13,
-          "distance_km": 7.66
+          "distance_km": 6.9
+        },
+        {
+          "index": "S10",
+          "name": "Mercy University Hospital",
+          "category": "hospital",
+          "capacity": 22,
+          "distance_km": 7.54
+        },
+        {
+          "index": "S3",
+          "name": "Saint Mary's Health Campus",
+          "category": "hospital",
+          "capacity": 21,
+          "distance_km": 8.46
+        },
+        {
+          "index": "S1",
+          "name": "South Infirmary-Victoria University Hospital",
+          "category": "hospital",
+          "capacity": 42,
+          "distance_km": 9.17
+        },
+        {
+          "index": "S4",
+          "name": "Saint Finbarr's Hospital",
+          "category": "hospital",
+          "capacity": 28,
+          "distance_km": 13.84
         },
         {
           "index": "S6",
           "name": "Mater Private Cork",
           "category": "hospital",
           "capacity": 24,
-          "distance_km": 8.02
-        },
-        {
-          "index": "S7",
-          "name": "Cork University Hospital",
-          "category": "hospital",
-          "capacity": 21,
-          "distance_km": 9.05
+          "distance_km": 17.57
         }
       ]
     },
     {
       "id": "A4",
-      "lat": 51.858693883262944,
-      "lon": -8.48671172704721,
+      "lat": 51.904944995864085,
+      "lon": -8.414731544878375,
       "category": "fire",
       "distances": [
+        {
+          "index": "S12",
+          "name": "Ballyvolane Fire Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 5.22
+        },
         {
           "index": "S2",
           "name": "Unnamed Fire Station",
           "category": "fire",
           "capacity": 2,
-          "distance_km": 6.94
+          "distance_km": 6.8
         },
         {
           "index": "S19",
           "name": "Anglesea Street Fire Station",
           "category": "fire",
           "capacity": 3,
-          "distance_km": 6.94
-        },
-        {
-          "index": "S12",
-          "name": "Ballyvolane Fire Station",
-          "category": "fire",
-          "capacity": 4,
-          "distance_km": 9.6
+          "distance_km": 6.8
         }
       ]
     },
     {
       "id": "A5",
-      "lat": 51.85936952398616,
-      "lon": -8.51510086599139,
-      "category": "hospital",
-      "distances": [
-        {
-          "index": "S7",
-          "name": "Cork University Hospital",
-          "category": "hospital",
-          "capacity": 21,
-          "distance_km": 3.54
-        },
-        {
-          "index": "S5",
-          "name": "Bon Secours Hospital",
-          "category": "hospital",
-          "capacity": 13,
-          "distance_km": 4.8
-        },
-        {
-          "index": "S10",
-          "name": "Mercy University Hospital",
-          "category": "hospital",
-          "capacity": 22,
-          "distance_km": 5.56
-        },
-        {
-          "index": "S1",
-          "name": "South Infirmary-Victoria University Hospital",
-          "category": "hospital",
-          "capacity": 42,
-          "distance_km": 5.97
-        },
-        {
-          "index": "S3",
-          "name": "Saint Mary's Health Campus",
-          "category": "hospital",
-          "capacity": 21,
-          "distance_km": 7.28
-        },
-        {
-          "index": "S4",
-          "name": "Saint Finbarr's Hospital",
-          "category": "hospital",
-          "capacity": 28,
-          "distance_km": 7.32
-        },
-        {
-          "index": "S6",
-          "name": "Mater Private Cork",
-          "category": "hospital",
-          "capacity": 24,
-          "distance_km": 11.05
-        }
-      ]
-    },
-    {
-      "id": "A6",
-      "lat": 51.85265359696839,
-      "lon": -8.520174352397003,
-      "category": "hospital",
-      "distances": [
-        {
-          "index": "S7",
-          "name": "Cork University Hospital",
-          "category": "hospital",
-          "capacity": 21,
-          "distance_km": 4.33
-        },
-        {
-          "index": "S5",
-          "name": "Bon Secours Hospital",
-          "category": "hospital",
-          "capacity": 13,
-          "distance_km": 5.59
-        },
-        {
-          "index": "S10",
-          "name": "Mercy University Hospital",
-          "category": "hospital",
-          "capacity": 22,
-          "distance_km": 6.36
-        },
-        {
-          "index": "S1",
-          "name": "South Infirmary-Victoria University Hospital",
-          "category": "hospital",
-          "capacity": 42,
-          "distance_km": 6.77
-        },
-        {
-          "index": "S3",
-          "name": "Saint Mary's Health Campus",
-          "category": "hospital",
-          "capacity": 21,
-          "distance_km": 8.08
-        },
-        {
-          "index": "S4",
-          "name": "Saint Finbarr's Hospital",
-          "category": "hospital",
-          "capacity": 28,
-          "distance_km": 8.12
-        },
-        {
-          "index": "S6",
-          "name": "Mater Private Cork",
-          "category": "hospital",
-          "capacity": 24,
-          "distance_km": 11.85
-        }
-      ]
-    },
-    {
-      "id": "A7",
-      "lat": 51.92013249735903,
-      "lon": -8.487072026855751,
-      "category": "police",
-      "distances": [
-        {
-          "index": "S14",
-          "name": "Gurranabraher Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 2.76
-        },
-        {
-          "index": "S16",
-          "name": "Bridewell Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 3.28
-        },
-        {
-          "index": "S18",
-          "name": "Unnamed Police Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 4.08
-        },
-        {
-          "index": "S17",
-          "name": "Anglesea Street Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 4.19
-        },
-        {
-          "index": "S8",
-          "name": "Mayfield Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 5.67
-        },
-        {
-          "index": "S15",
-          "name": "Bishopstown Garda Station",
-          "category": "police",
-          "capacity": 8,
-          "distance_km": 6.68
-        },
-        {
-          "index": "S13",
-          "name": "Togher Garda Station",
-          "category": "police",
-          "capacity": 8,
-          "distance_km": 6.75
-        },
-        {
-          "index": "S9",
-          "name": "Douglas Garda Station",
-          "category": "police",
-          "capacity": 5,
-          "distance_km": 7.71
-        },
-        {
-          "index": "S11",
-          "name": "Blackrock Garda Station",
-          "category": "police",
-          "capacity": 6,
-          "distance_km": 8.54
-        }
-      ]
-    },
-    {
-      "id": "A8",
-      "lat": 51.90892656838759,
-      "lon": -8.428585431498327,
+      "lat": 51.92641733489906,
+      "lon": -8.488788105564224,
       "category": "fire",
       "distances": [
         {
@@ -382,163 +197,236 @@
           "name": "Ballyvolane Fire Station",
           "category": "fire",
           "capacity": 4,
-          "distance_km": 3.43
+          "distance_km": 2.99
         },
         {
           "index": "S2",
           "name": "Unnamed Fire Station",
           "category": "fire",
           "capacity": 2,
-          "distance_km": 3.68
+          "distance_km": 4.75
         },
         {
           "index": "S19",
           "name": "Anglesea Street Fire Station",
           "category": "fire",
           "capacity": 3,
-          "distance_km": 3.68
+          "distance_km": 4.75
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "lat": 51.95911631539683,
+      "lon": -8.36217346787566,
+      "category": "fire",
+      "distances": [
+        {
+          "index": "S12",
+          "name": "Ballyvolane Fire Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 12.28
+        },
+        {
+          "index": "S2",
+          "name": "Unnamed Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 13.28
+        },
+        {
+          "index": "S19",
+          "name": "Anglesea Street Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 13.28
+        }
+      ]
+    },
+    {
+      "id": "A7",
+      "lat": 51.94248977271426,
+      "lon": -8.377048898395024,
+      "category": "hospital",
+      "distances": [
+        {
+          "index": "S1",
+          "name": "South Infirmary-Victoria University Hospital",
+          "category": "hospital",
+          "capacity": 42,
+          "distance_km": 9.79
+        },
+        {
+          "index": "S6",
+          "name": "Mater Private Cork",
+          "category": "hospital",
+          "capacity": 24,
+          "distance_km": 10.43
+        },
+        {
+          "index": "S4",
+          "name": "Saint Finbarr's Hospital",
+          "category": "hospital",
+          "capacity": 28,
+          "distance_km": 10.59
+        },
+        {
+          "index": "S10",
+          "name": "Mercy University Hospital",
+          "category": "hospital",
+          "capacity": 22,
+          "distance_km": 10.7
+        },
+        {
+          "index": "S3",
+          "name": "Saint Mary's Health Campus",
+          "category": "hospital",
+          "capacity": 21,
+          "distance_km": 11.41
+        },
+        {
+          "index": "S5",
+          "name": "Bon Secours Hospital",
+          "category": "hospital",
+          "capacity": 13,
+          "distance_km": 13.61
+        },
+        {
+          "index": "S7",
+          "name": "Cork University Hospital",
+          "category": "hospital",
+          "capacity": 21,
+          "distance_km": 18.41
+        }
+      ]
+    },
+    {
+      "id": "A8",
+      "lat": 51.85222853698566,
+      "lon": -8.39731091875469,
+      "category": "fire",
+      "distances": [
+        {
+          "index": "S2",
+          "name": "Unnamed Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 10.79
+        },
+        {
+          "index": "S19",
+          "name": "Anglesea Street Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 10.79
+        },
+        {
+          "index": "S12",
+          "name": "Ballyvolane Fire Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 13.45
         }
       ]
     },
     {
       "id": "A9",
-      "lat": 51.925880736712976,
-      "lon": -8.526051102543468,
-      "category": "police",
+      "lat": 51.918390150615835,
+      "lon": -8.524267185234734,
+      "category": "fire",
       "distances": [
         {
-          "index": "S14",
-          "name": "Gurranabraher Garda Station",
-          "category": "police",
+          "index": "S12",
+          "name": "Ballyvolane Fire Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 6.17
+        },
+        {
+          "index": "S2",
+          "name": "Unnamed Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 6.75
+        },
+        {
+          "index": "S19",
+          "name": "Anglesea Street Fire Station",
+          "category": "fire",
           "capacity": 3,
-          "distance_km": 5.44
-        },
-        {
-          "index": "S16",
-          "name": "Bridewell Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 6.0
-        },
-        {
-          "index": "S18",
-          "name": "Unnamed Police Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 7.04
-        },
-        {
-          "index": "S17",
-          "name": "Anglesea Street Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 7.14
-        },
-        {
-          "index": "S13",
-          "name": "Togher Garda Station",
-          "category": "police",
-          "capacity": 8,
-          "distance_km": 9.46
-        },
-        {
-          "index": "S15",
-          "name": "Bishopstown Garda Station",
-          "category": "police",
-          "capacity": 8,
-          "distance_km": 9.53
-        },
-        {
-          "index": "S8",
-          "name": "Mayfield Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 9.69
-        },
-        {
-          "index": "S9",
-          "name": "Douglas Garda Station",
-          "category": "police",
-          "capacity": 5,
-          "distance_km": 10.66
-        },
-        {
-          "index": "S11",
-          "name": "Blackrock Garda Station",
-          "category": "police",
-          "capacity": 6,
-          "distance_km": 11.49
+          "distance_km": 6.75
         }
       ]
     },
     {
       "id": "A10",
-      "lat": 51.884025051651804,
-      "lon": -8.526678075028233,
+      "lat": 51.88118819374737,
+      "lon": -8.423661385350805,
       "category": "police",
       "distances": [
-        {
-          "index": "S15",
-          "name": "Bishopstown Garda Station",
-          "category": "police",
-          "capacity": 8,
-          "distance_km": 1.22
-        },
-        {
-          "index": "S13",
-          "name": "Togher Garda Station",
-          "category": "police",
-          "capacity": 8,
-          "distance_km": 4.25
-        },
-        {
-          "index": "S16",
-          "name": "Bridewell Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 5.4
-        },
-        {
-          "index": "S14",
-          "name": "Gurranabraher Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 5.74
-        },
-        {
-          "index": "S17",
-          "name": "Anglesea Street Garda Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 7.67
-        },
-        {
-          "index": "S18",
-          "name": "Unnamed Police Station",
-          "category": "police",
-          "capacity": 3,
-          "distance_km": 8.14
-        },
         {
           "index": "S9",
           "name": "Douglas Garda Station",
           "category": "police",
           "capacity": 5,
-          "distance_km": 8.2
+          "distance_km": 2.89
         },
         {
           "index": "S11",
           "name": "Blackrock Garda Station",
           "category": "police",
           "capacity": 6,
-          "distance_km": 10.93
+          "distance_km": 6.24
+        },
+        {
+          "index": "S13",
+          "name": "Togher Garda Station",
+          "category": "police",
+          "capacity": 8,
+          "distance_km": 7.48
+        },
+        {
+          "index": "S17",
+          "name": "Anglesea Street Garda Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 8.47
+        },
+        {
+          "index": "S18",
+          "name": "Unnamed Police Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 8.94
+        },
+        {
+          "index": "S15",
+          "name": "Bishopstown Garda Station",
+          "category": "police",
+          "capacity": 8,
+          "distance_km": 9.6
+        },
+        {
+          "index": "S16",
+          "name": "Bridewell Garda Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 9.76
         },
         {
           "index": "S8",
           "name": "Mayfield Garda Station",
           "category": "police",
           "capacity": 3,
-          "distance_km": 11.31
+          "distance_km": 10.38
+        },
+        {
+          "index": "S14",
+          "name": "Gurranabraher Garda Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 11.77
         }
       ]
     }
