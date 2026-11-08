@@ -1,9 +1,9 @@
 import folium
 
 CATEGORY_STYLE = {
-    "Hospitals":       {"color": "red",       "icon": "plus-sign", "prefix": "glyphicon"},
-    "Fire Stations":   {"color": "orange",    "icon": "fire",      "prefix": "fa"},
-    "Police Stations": {"color": "cadetblue", "icon": "shield",    "prefix": "fa"},
+    "hospital": {"color": "red", "icon": "plus-sign", "prefix": "glyphicon"},
+    "fire": {"color": "orange", "icon": "fire", "prefix": "fa"},
+    "police": {"color": "cadetblue", "icon": "shield", "prefix": "fa"},
 }
 
 def distance_color(km, max_km=10):
@@ -15,6 +15,7 @@ def distance_color(km, max_km=10):
 def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
                         visible_categories, center, zoom=12):
     city_map = folium.Map(location=center, zoom_start=zoom, tiles="OpenStreetMap")
+    hospitals_by_index = {hospital["index"]: hospital for hospital in hospitals}
 
     for c in centers:
         if not visible_categories.get(c["category"], False):
@@ -25,7 +26,10 @@ def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
         )
         folium.Marker(
             location=[c["lat"], c["lon"]],
-            popup=f"{c['name']} ({c['category']})",
+            popup=(
+                f"#{c['index']} {c['name']} ({c['category']})"
+                f" — capacity: {c['capacity']} concurrent incidents"
+            ),
             icon=folium.Icon(color=style["color"], icon=style["icon"], prefix=style["prefix"]),
         ).add_to(city_map)
 
@@ -42,7 +46,7 @@ def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
             continue
 
         for i, d in enumerate(a["distances"]):
-            hosp = hospitals[d["hospital_index"]]
+            hosp = hospitals_by_index[d["index"]]
             is_nearest = (i == 0)
             folium.PolyLine(
                 locations=[[a["lat"], a["lon"]], [hosp["lat"], hosp["lon"]]],

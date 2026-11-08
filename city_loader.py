@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from data import add_service_site_metadata
 
 CITY_DATA_DIR = Path(__file__).parent / "city_data"
 REQUIRED_KEYS = {"name", "center", "bounds", "centers"}
@@ -27,6 +28,9 @@ def load_preloaded_cities():
         if missing:
             skipped.append((file.name, f"missing keys: {missing}"))
             continue
+
+        for center in data["centers"]:
+            add_service_site_metadata(center)
 
         cities[data["name"]] = data
 

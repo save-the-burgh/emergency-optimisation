@@ -1,0 +1,219 @@
+{
+  "incident_sites": [
+    {
+      "id": "A1",
+      "lat": 51.91394267984579,
+      "lon": -8.5462483867166,
+      "category": "fire",
+      "distances": [
+        {
+          "hospital_index": 1,
+          "hospital": "Saint Mary's Health Campus",
+          "distance_km": 4.75
+        },
+        {
+          "hospital_index": 6,
+          "hospital": "Mercy University Hospital",
+          "distance_km": 5.71
+        },
+        {
+          "hospital_index": 3,
+          "hospital": "Bon Secours Hospital",
+          "distance_km": 6.27
+        },
+        {
+          "hospital_index": 5,
+          "hospital": "Cork University Hospital",
+          "distance_km": 6.8
+        },
+        {
+          "hospital_index": 0,
+          "hospital": "South Infirmary-Victoria University Hospital",
+          "distance_km": 7.16
+        },
+        {
+          "hospital_index": 2,
+          "hospital": "Saint Finbarr's Hospital",
+          "distance_km": 7.96
+        },
+        {
+          "hospital_index": 4,
+          "hospital": "Mater Private Cork",
+          "distance_km": 15.64
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "lat": 51.87448918538035,
+      "lon": -8.52906931072123,
+      "category": "police",
+      "distances": [
+        {
+          "hospital_index": 5,
+          "hospital": "Cork University Hospital",
+          "distance_km": 1.84
+        },
+        {
+          "hospital_index": 3,
+          "hospital": "Bon Secours Hospital",
+          "distance_km": 3.46
+        },
+        {
+          "hospital_index": 6,
+          "hospital": "Mercy University Hospital",
+          "distance_km": 4.82
+        },
+        {
+          "hospital_index": 1,
+          "hospital": "Saint Mary's Health Campus",
+          "distance_km": 6.02
+        },
+        {
+          "hospital_index": 2,
+          "hospital": "Saint Finbarr's Hospital",
+          "distance_km": 6.86
+        },
+        {
+          "hospital_index": 0,
+          "hospital": "South Infirmary-Victoria University Hospital",
+          "distance_km": 6.91
+        },
+        {
+          "hospital_index": 4,
+          "hospital": "Mater Private Cork",
+          "distance_km": 10.59
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "lat": 51.917669948742294,
+      "lon": -8.416173064844273,
+      "category": "police",
+      "distances": [
+        {
+          "hospital_index": 0,
+          "hospital": "South Infirmary-Victoria University Hospital",
+          "distance_km": 5.26
+        },
+        {
+          "hospital_index": 2,
+          "hospital": "Saint Finbarr's Hospital",
+          "distance_km": 6.05
+        },
+        {
+          "hospital_index": 6,
+          "hospital": "Mercy University Hospital",
+          "distance_km": 6.16
+        },
+        {
+          "hospital_index": 1,
+          "hospital": "Saint Mary's Health Campus",
+          "distance_km": 6.87
+        },
+        {
+          "hospital_index": 3,
+          "hospital": "Bon Secours Hospital",
+          "distance_km": 7.66
+        },
+        {
+          "hospital_index": 4,
+          "hospital": "Mater Private Cork",
+          "distance_km": 8.02
+        },
+        {
+          "hospital_index": 5,
+          "hospital": "Cork University Hospital",
+          "distance_km": 9.05
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "lat": 51.90904925124491,
+      "lon": -8.545232598077733,
+      "category": "police",
+      "distances": [
+        {
+          "hospital_index": 1,
+          "hospital": "Saint Mary's Health Campus",
+          "distance_km": 4.56
+        },
+        {
+          "hospital_index": 6,
+          "hospital": "Mercy University Hospital",
+          "distance_km": 5.52
+        },
+        {
+          "hospital_index": 3,
+          "hospital": "Bon Secours Hospital",
+          "distance_km": 6.09
+        },
+        {
+          "hospital_index": 5,
+          "hospital": "Cork University Hospital",
+          "distance_km": 6.62
+        },
+        {
+          "hospital_index": 0,
+          "hospital": "South Infirmary-Victoria University Hospital",
+          "distance_km": 6.98
+        },
+        {
+          "hospital_index": 2,
+          "hospital": "Saint Finbarr's Hospital",
+          "distance_km": 7.77
+        },
+        {
+          "hospital_index": 4,
+          "hospital": "Mater Private Cork",
+          "distance_km": 15.46
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "lat": 51.871863797480366,
+      "lon": -8.474196706784497,
+      "category": "police",
+      "distances": [
+        {
+          "hospital_index": 2,
+          "hospital": "Saint Finbarr's Hospital",
+          "distance_km": 2.91
+        },
+        {
+          "hospital_index": 0,
+          "hospital": "South Infirmary-Victoria University Hospital",
+          "distance_km": 2.97
+        },
+        {
+          "hospital_index": 5,
+          "hospital": "Cork University Hospital",
+          "distance_km": 4.07
+        },
+        {
+          "hospital_index": 6,
+          "hospital": "Mercy University Hospital",
+          "distance_km": 4.25
+        },
+        {
+          "hospital_index": 3,
+          "hospital": "Bon Secours Hospital",
+          "distance_km": 4.28
+        },
+        {
+          "hospital_index": 1,
+          "hospital": "Saint Mary's Health Campus",
+          "distance_km": 6.59
+        },
+        {
+          "hospital_index": 4,
+          "hospital": "Mater Private Cork",
+          "distance_km": 6.67
+        }
+      ]
+    }
+  ]
+}

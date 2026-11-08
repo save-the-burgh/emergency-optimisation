@@ -1,8 +1,11 @@
 import random
+import hashlib
+import json
+from pathlib import Path
 import requests
-from geopy.distance import geodesic
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
+
 
 OVERPASS_URLS = [
     "https://overpass-api.de/api/interpreter",
@@ -14,13 +17,64 @@ HEADERS = {
 }
 
 AMENITY_CATEGORY_MAP = {
-    "hospital": "Hospitals",
-    "fire_station": "Fire Stations",
-    "police": "Police Stations",
+    "hospital": "hospital",
+    "fire_station": "fire",
+    "police": "police",
 }
+
+LEGACY_CATEGORY_MAP = {
+    "hospitals": "hospital",
+    "fire stations": "fire",
+    "fire_station": "fire",
+    "police stations": "police",
+}
+
+LARGE_HOSPITAL_MARKERS = (
+    "general hospital",
+    "infirmary",
+    "royal hospital",
+    "western general",
+)
+
 
 _geolocator = Nominatim(user_agent=HEADERS["User-Agent"])
 _geocode = RateLimiter(_geolocator.geocode, min_delay_seconds=1)
+
+
+def add_service_site_metadata(site):
+    """Assign a stable site ID and deterministic estimated incident capacity."""
+    category = site["category"].strip().casefold()
+    category = LEGACY_CATEGORY_MAP.get(category, category)
+    if category not in {"hospital", "fire", "police"}:
+        raise ValueError(f"Unknown service site category: {site['category']}")
+    site["category"] = category
+
+    identity = "\0".join((
+        category,
+        site["name"].strip().casefold(),
+        f"{float(site['lat']):.7f}",
+        f"{float(site['lon']):.7f}",
+    ))
+    site_id = hashlib.sha256(identity.encode("utf-8")).hexdigest()
+    site["index"] = site_id
+
+    if "capacity" not in site:
+        if category == "hospital":
+            name = site["name"].casefold()
+            minimum, maximum = (
+                (30, 60)
+                if any(marker in name for marker in LARGE_HOSPITAL_MARKERS)
+                else (12, 30)
+            )
+        elif category == "fire":
+            minimum, maximum = 2, 4
+        elif category == "police":
+            minimum, maximum = 3, 8
+        site["capacity"] = random.Random(int(site_id[:16], 16)).randint(
+            minimum, maximum
+        )
+
+    return site
 
 
 def geocode_city(city_name):
@@ -70,7 +124,12 @@ def _parse_osm_elements(elements):
             continue
 
         name = tags.get("name") or f"Unnamed {category[:-1]}"
-        centers.append({"name": name, "lat": lat, "lon": lon, "category": category})
+        centers.append(add_service_site_metadata({
+            "name": name,
+            "lat": lat,
+            "lon": lon,
+            "category": category,
+        }))
 
     return centers
 
@@ -110,33 +169,60 @@ def fetch_city_data(city_name):
         "centers": centers,
     }
 
-
 def generate_random_accidents(bounds, n=5, seed=None):
     """Generate n random accident locations within a city's bounding box."""
     if seed is not None:
         random.seed(seed)
-
     accidents = []
+    categories = ["police", "fire", "hospital"]
+    random.shuffle(categories)
     for i in range(n):
         lat = random.uniform(bounds["lat_min"], bounds["lat_max"])
         lon = random.uniform(bounds["lon_min"], bounds["lon_max"])
-        accidents.append({"id": f"A{i+1}", "lat": lat, "lon": lon})
+        cat = categories[i] if i < len(categories) else random.choice(categories)
+        accidents.append({"id": f"A{i+1}", "lat": lat, "lon": lon, "category": cat})
     return accidents
 
 
+def save_incident_data(city_name, incidents):
+    """Save generated incidents and their distances under the incident_sites key."""
+    filename = "".join(
+        character if character.isalnum() or character in "-_ " else "_"
+        for character in city_name).strip().replace(" ", "_")
+    if not filename:
+        raise ValueError("city_name must contain at least one valid filename character")
+
+    output_path = Path(__file__).parent / "incidence_data" / f"{filename}.json"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(
+        json.dumps({"incident_sites": incidents}, indent=2),
+        encoding="utf-8")
+    return output_path
+
+
 def calculate_distances(hospitals, accidents):
-    """
-    PLACEHOLDER — replace with your teammate's real distance-calculation
-    module once ready. Must return the same shape of data.
-    """
+    """Add OSRM driving distances from each accident to every hospital."""
     enriched = []
     for a in accidents:
         distances = []
-        for idx, h in enumerate(hospitals):
-            km = geodesic((a["lat"], a["lon"]), (h["lat"], h["lon"])).km
+        for h in hospitals:
+            coordinates = f"{a['lon']},{a['lat']};{h['lon']},{h['lat']}"
+            response = requests.get(
+                f"https://router.project-osrm.org/route/v1/driving/{coordinates}",
+                params={"overview": "false"},
+                timeout=30,
+            )
+            response.raise_for_status()
+            routes = response.json().get("routes", [])
+            if not routes:
+                raise RuntimeError(
+                    f"No driving route found from accident {a['id']} to {h['name']}"
+                )
+            km = routes[0]["distance"] / 1000
             distances.append({
-                "hospital_index": idx,
+                "index": h["index"],
                 "hospital": h["name"],
+                "capacity": h["capacity"],
                 "distance_km": round(km, 2),
             })
         distances.sort(key=lambda d: d["distance_km"])

@@ -2,12 +2,17 @@ import streamlit as st
 from streamlit_folium import st_folium
 
 from map_builder import build_dispatch_map
-from data import fetch_city_data, generate_random_accidents, calculate_distances
+from data import (
+    fetch_city_data,
+    generate_random_accidents,
+    calculate_distances,
+    save_incident_data,
+)
 from city_loader import load_preloaded_cities
 
 st.set_page_config(layout="wide")
 st.title("Emergency Dispatch Map")
-
+save_jsons = True
 # Load the 3 preloaded cities once per session, from local JSON files.
 if "cities" not in st.session_state:
     cities, skipped_files = load_preloaded_cities()
@@ -42,10 +47,13 @@ city_name = st.sidebar.selectbox("Select a city", sorted(st.session_state.cities
 city_data = st.session_state.cities[city_name]
 
 all_centers = city_data["centers"]
-hospitals = [c for c in all_centers if c["category"] == "Hospitals"]
+hospitals = [c for c in all_centers if c["category"] == "hospital"]
 
 raw_accidents = generate_random_accidents(bounds=city_data["bounds"], n=5, seed=42)
 accidents = calculate_distances(hospitals, raw_accidents)
+if save_jsons:
+    output_path = save_incident_data(city_data["name"], accidents)
+    st.sidebar.caption(f"Saved JSON: {output_path.name}")
 
 # --- Sidebar: distances above controls ---
 distance_section = st.sidebar.empty()
@@ -62,7 +70,11 @@ with distance_section.container():
     st.subheader(f"Distances from Accident {selected['id']}")
     if hospitals:
         st.table([
-            {"Hospital": d["hospital"], "Distance (km)": d["distance_km"]}
+            {
+                "Hospital": d["hospital"],
+                "Capacity (incidents)": d["capacity"],
+                "Distance (km)": d["distance_km"],
+            }
             for d in selected["distances"]
         ])
     else:
@@ -71,9 +83,9 @@ with distance_section.container():
 # --- Map layer toggles ---
 st.sidebar.header("Map Layers")
 visible_categories = {
-    "Hospitals": st.sidebar.checkbox("Hospitals", value=True),
-    "Fire Stations": st.sidebar.checkbox("Fire Stations", value=True),
-    "Police Stations": st.sidebar.checkbox("Police Stations", value=True),
+    "hospital": st.sidebar.checkbox("hospital", value=True),
+    "fire": st.sidebar.checkbox("fire", value=True),
+    "police": st.sidebar.checkbox("police", value=True),
 }
 
 # --- Main panel: map ---
