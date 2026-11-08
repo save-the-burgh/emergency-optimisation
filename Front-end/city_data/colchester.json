@@ -1,0 +1,79 @@
+{
+  "name": "Colchester",
+  "center": {
+    "lat": 51.8959,
+    "lon": 0.8919
+  },
+  "bounds": {
+    "lat_min": 51.85,
+    "lat_max": 51.95,
+    "lon_min": 0.85,
+    "lon_max": 0.95
+  },
+  "centers": [
+    {
+      "name": "Cygnet Hospital Colchester",
+      "lat": 51.9231053,
+      "lon": 0.8920793,
+      "category": "hospital",
+      "index": "S1",
+      "capacity": 28
+    },
+    {
+      "name": "Chavasse V C House",
+      "lat": 51.8685989,
+      "lon": 0.893388,
+      "category": "hospital",
+      "index": "S2",
+      "capacity": 30
+    },
+    {
+      "name": "Colchester Police Station",
+      "lat": 51.8862598,
+      "lon": 0.8943425,
+      "category": "police",
+      "index": "S3",
+      "capacity": 4
+    },
+    {
+      "name": "Colchester General Hospital",
+      "lat": 51.9090022,
+      "lon": 0.8997515,
+      "category": "hospital",
+      "index": "S4",
+      "capacity": 57
+    },
+    {
+      "name": "St Aubyn Centre",
+      "lat": 51.9185738,
+      "lon": 0.8927168,
+      "category": "hospital",
+      "index": "S5",
+      "capacity": 27
+    },
+    {
+      "name": "Oaks Hospital",
+      "lat": 51.9063079,
+      "lon": 0.895291,
+      "category": "hospital",
+      "index": "S6",
+      "capacity": 30
+    },
+    {
+      "name": "Colchester Fire Station",
+      "lat": 51.8970379,
+      "lon": 0.9016581,
+      "category": "fire",
+      "index": "S7",
+      "capacity": 3
+    },
+    {
+      "name": "King's Wood Centre",
+      "lat": 51.9117859,
+      "lon": 0.9014152,
+      "category": "hospital",
+      "index": "S8",
+      "capacity": 15
+    }
+  ]
+}
