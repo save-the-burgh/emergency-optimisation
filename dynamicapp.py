@@ -19,6 +19,7 @@ st.set_page_config(
 )
 from auth import get_login_url, get_logout_url, get_current_user, logout
 
+save_jsons = True
 user = get_current_user()
 
 st.title("Emergency Dispatch Simulator")
@@ -121,7 +122,7 @@ with distance_section.container():
 
 st.sidebar.header("Map Layers")
 visible_categories = {
-    "hospital": st.sidebar.checkbox("hospital", value=True),
+    "hospital": st.sidebar.checkbox("Hospital", value=True),
     "fire": st.sidebar.checkbox("fire", value=True),
     "police": st.sidebar.checkbox("police", value=True),
 }
