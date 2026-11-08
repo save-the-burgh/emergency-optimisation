@@ -15,7 +15,11 @@ def distance_color(km, max_km=10):
 def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
                         visible_categories, center, assignments=None, zoom=12):
     assignments = assignments or {}
+
+    # --- TILES: swapped from default OSM to CartoDB positron ---
     city_map = folium.Map(location=center, zoom_start=zoom, tiles="OpenStreetMap")
+
+
 
     for c in centers:
         if not visible_categories.get(c["category"], False):
@@ -32,8 +36,9 @@ def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
             popup=f"{c['name']} ({c['category']})<br>Vehicles assigned: {assigned}",
             tooltip=f"{c['name']} — {assigned} vehicle(s)",
             icon=folium.Icon(color=marker_color, icon=style["icon"], prefix=style["prefix"]),
-        ).add_to(city_map)
+        ).add_to(city_map) 
 
+   
     for a in accidents:
         is_selected = (a["id"] == selected_accident_id)
 
@@ -56,5 +61,8 @@ def build_dispatch_map(centers, hospitals, accidents, selected_accident_id,
                 opacity=1.0 if is_nearest else 0.6,
                 tooltip=f"{a['id']} → {hosp['name']}: {d['distance_km']} km",
             ).add_to(city_map)
+
+
+
 
     return city_map
