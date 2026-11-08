@@ -1,0 +1,798 @@
+{
+  "incident_sites": [
+    {
+      "id": "A1",
+      "lat": 55.90175075286559,
+      "lon": -3.244994136326176,
+      "category": "fire",
+      "distances": [
+        {
+          "index": "S19",
+          "service_site": "Sighthill Community Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 5.31
+        },
+        {
+          "index": "S29",
+          "service_site": "Tollcross Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 6.7
+        },
+        {
+          "index": "S16",
+          "service_site": "McDonald Road Community Fire & Ambulance Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 10.1
+        },
+        {
+          "index": "S12",
+          "service_site": "Crewe Toll Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 10.12
+        },
+        {
+          "index": "S21",
+          "service_site": "Liberton Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 10.39
+        },
+        {
+          "index": "S20",
+          "service_site": "Marionville Community Fire Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 19.99
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "lat": 55.915624751670414,
+      "lon": -3.1527057571671975,
+      "category": "police",
+      "distances": [
+        {
+          "index": "S22",
+          "service_site": "Howdenhall Police Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 1.91
+        },
+        {
+          "index": "S17",
+          "service_site": "Craigmillar Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 2.71
+        },
+        {
+          "index": "S30",
+          "service_site": "St Leonard's Police Station and Divisional Headquarters",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 4.17
+        },
+        {
+          "index": "S28",
+          "service_site": "Gayfield Square Police Station",
+          "category": "police",
+          "capacity": 7,
+          "distance_km": 5.82
+        },
+        {
+          "index": "S3",
+          "service_site": "BTP Edinburgh Police Station",
+          "category": "police",
+          "capacity": 6,
+          "distance_km": 6.02
+        },
+        {
+          "index": "S9",
+          "service_site": "Oxgangs Police Station",
+          "category": "police",
+          "capacity": 6,
+          "distance_km": 6.03
+        },
+        {
+          "index": "S1",
+          "service_site": "West End Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 6.05
+        },
+        {
+          "index": "S8",
+          "service_site": "Fettes Police Station",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 8.09
+        },
+        {
+          "index": "S18",
+          "service_site": "Unnamed Police Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 8.1
+        },
+        {
+          "index": "S2",
+          "service_site": "Drylaw Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 9.89
+        },
+        {
+          "index": "S13",
+          "service_site": "Wester Hailes Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 13.44
+        },
+        {
+          "index": "S10",
+          "service_site": "Corstorphine Police Station",
+          "category": "police",
+          "capacity": 7,
+          "distance_km": 18.68
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "lat": 55.947368964119605,
+      "lon": -3.121564086459031,
+      "category": "hospital",
+      "distances": [
+        {
+          "index": "S27",
+          "service_site": "Findlay House",
+          "category": "hospital",
+          "capacity": 20,
+          "distance_km": 3.48
+        },
+        {
+          "index": "S15",
+          "service_site": "Royal Hospital for Children and Young People",
+          "category": "hospital",
+          "capacity": 33,
+          "distance_km": 6.06
+        },
+        {
+          "index": "S11",
+          "service_site": "Royal Infirmary of Edinburgh (Little France)",
+          "category": "hospital",
+          "capacity": 53,
+          "distance_km": 6.33
+        },
+        {
+          "index": "S24",
+          "service_site": "Chalmers Centre",
+          "category": "hospital",
+          "capacity": 17,
+          "distance_km": 6.46
+        },
+        {
+          "index": "S25",
+          "service_site": "Princess Alexandra Eye Pavilion",
+          "category": "hospital",
+          "capacity": 12,
+          "distance_km": 6.52
+        },
+        {
+          "index": "S26",
+          "service_site": "Lauriston Building",
+          "category": "hospital",
+          "capacity": 30,
+          "distance_km": 6.59
+        },
+        {
+          "index": "S23",
+          "service_site": "Ellen's Glen Community Hospital",
+          "category": "hospital",
+          "capacity": 17,
+          "distance_km": 7.57
+        },
+        {
+          "index": "S4",
+          "service_site": "Astley Ainslie Hospital",
+          "category": "hospital",
+          "capacity": 21,
+          "distance_km": 7.63
+        },
+        {
+          "index": "S6",
+          "service_site": "Woodburn House NHS",
+          "category": "hospital",
+          "capacity": 13,
+          "distance_km": 7.97
+        },
+        {
+          "index": "S7",
+          "service_site": "Western General Hospital (Edinburgh)",
+          "category": "hospital",
+          "capacity": 51,
+          "distance_km": 8.46
+        },
+        {
+          "index": "S14",
+          "service_site": "Royal Edinburgh Hospital",
+          "category": "hospital",
+          "capacity": 22,
+          "distance_km": 8.67
+        },
+        {
+          "index": "S5",
+          "service_site": "Spire Murrayfield Hospital",
+          "category": "hospital",
+          "capacity": 27,
+          "distance_km": 10.5
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "lat": 55.90608571828406,
+      "lon": -3.215615636062946,
+      "category": "fire",
+      "distances": [
+        {
+          "index": "S29",
+          "service_site": "Tollcross Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 4.97
+        },
+        {
+          "index": "S21",
+          "service_site": "Liberton Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 5.63
+        },
+        {
+          "index": "S16",
+          "service_site": "McDonald Road Community Fire & Ambulance Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 8.37
+        },
+        {
+          "index": "S12",
+          "service_site": "Crewe Toll Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 9.05
+        },
+        {
+          "index": "S19",
+          "service_site": "Sighthill Community Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 10.36
+        },
+        {
+          "index": "S20",
+          "service_site": "Marionville Community Fire Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 17.54
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "lat": 55.90655866679031,
+      "lon": -3.253467821321852,
+      "category": "hospital",
+      "distances": [
+        {
+          "index": "S14",
+          "service_site": "Royal Edinburgh Hospital",
+          "category": "hospital",
+          "capacity": 22,
+          "distance_km": 4.72
+        },
+        {
+          "index": "S6",
+          "service_site": "Woodburn House NHS",
+          "category": "hospital",
+          "capacity": 13,
+          "distance_km": 5.31
+        },
+        {
+          "index": "S4",
+          "service_site": "Astley Ainslie Hospital",
+          "category": "hospital",
+          "capacity": 21,
+          "distance_km": 5.59
+        },
+        {
+          "index": "S5",
+          "service_site": "Spire Murrayfield Hospital",
+          "category": "hospital",
+          "capacity": 27,
+          "distance_km": 5.98
+        },
+        {
+          "index": "S24",
+          "service_site": "Chalmers Centre",
+          "category": "hospital",
+          "capacity": 17,
+          "distance_km": 6.08
+        },
+        {
+          "index": "S25",
+          "service_site": "Princess Alexandra Eye Pavilion",
+          "category": "hospital",
+          "capacity": 12,
+          "distance_km": 6.21
+        },
+        {
+          "index": "S26",
+          "service_site": "Lauriston Building",
+          "category": "hospital",
+          "capacity": 30,
+          "distance_km": 6.27
+        },
+        {
+          "index": "S7",
+          "service_site": "Western General Hospital (Edinburgh)",
+          "category": "hospital",
+          "capacity": 51,
+          "distance_km": 8.91
+        },
+        {
+          "index": "S23",
+          "service_site": "Ellen's Glen Community Hospital",
+          "category": "hospital",
+          "capacity": 17,
+          "distance_km": 10.02
+        },
+        {
+          "index": "S15",
+          "service_site": "Royal Hospital for Children and Young People",
+          "category": "hospital",
+          "capacity": 33,
+          "distance_km": 15.34
+        },
+        {
+          "index": "S11",
+          "service_site": "Royal Infirmary of Edinburgh (Little France)",
+          "category": "hospital",
+          "capacity": 53,
+          "distance_km": 15.6
+        },
+        {
+          "index": "S27",
+          "service_site": "Findlay House",
+          "category": "hospital",
+          "capacity": 20,
+          "distance_km": 23.11
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "lat": 55.90185751787787,
+      "lon": -3.2602324698626703,
+      "category": "hospital",
+      "distances": [
+        {
+          "index": "S14",
+          "service_site": "Royal Edinburgh Hospital",
+          "category": "hospital",
+          "capacity": 22,
+          "distance_km": 5.54
+        },
+        {
+          "index": "S6",
+          "service_site": "Woodburn House NHS",
+          "category": "hospital",
+          "capacity": 13,
+          "distance_km": 6.14
+        },
+        {
+          "index": "S4",
+          "service_site": "Astley Ainslie Hospital",
+          "category": "hospital",
+          "capacity": 21,
+          "distance_km": 6.41
+        },
+        {
+          "index": "S5",
+          "service_site": "Spire Murrayfield Hospital",
+          "category": "hospital",
+          "capacity": 27,
+          "distance_km": 6.8
+        },
+        {
+          "index": "S24",
+          "service_site": "Chalmers Centre",
+          "category": "hospital",
+          "capacity": 17,
+          "distance_km": 6.9
+        },
+        {
+          "index": "S25",
+          "service_site": "Princess Alexandra Eye Pavilion",
+          "category": "hospital",
+          "capacity": 12,
+          "distance_km": 7.03
+        },
+        {
+          "index": "S26",
+          "service_site": "Lauriston Building",
+          "category": "hospital",
+          "capacity": 30,
+          "distance_km": 7.09
+        },
+        {
+          "index": "S7",
+          "service_site": "Western General Hospital (Edinburgh)",
+          "category": "hospital",
+          "capacity": 51,
+          "distance_km": 9.73
+        },
+        {
+          "index": "S23",
+          "service_site": "Ellen's Glen Community Hospital",
+          "category": "hospital",
+          "capacity": 17,
+          "distance_km": 10.84
+        },
+        {
+          "index": "S15",
+          "service_site": "Royal Hospital for Children and Young People",
+          "category": "hospital",
+          "capacity": 33,
+          "distance_km": 16.16
+        },
+        {
+          "index": "S11",
+          "service_site": "Royal Infirmary of Edinburgh (Little France)",
+          "category": "hospital",
+          "capacity": 53,
+          "distance_km": 16.42
+        },
+        {
+          "index": "S27",
+          "service_site": "Findlay House",
+          "category": "hospital",
+          "capacity": 20,
+          "distance_km": 23.93
+        }
+      ]
+    },
+    {
+      "id": "A7",
+      "lat": 55.949092748151315,
+      "lon": -3.2160960358076682,
+      "category": "police",
+      "distances": [
+        {
+          "index": "S3",
+          "service_site": "BTP Edinburgh Police Station",
+          "category": "police",
+          "capacity": 6,
+          "distance_km": 0.61
+        },
+        {
+          "index": "S1",
+          "service_site": "West End Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 0.64
+        },
+        {
+          "index": "S8",
+          "service_site": "Fettes Police Station",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 2.02
+        },
+        {
+          "index": "S18",
+          "service_site": "Unnamed Police Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 2.03
+        },
+        {
+          "index": "S28",
+          "service_site": "Gayfield Square Police Station",
+          "category": "police",
+          "capacity": 7,
+          "distance_km": 2.53
+        },
+        {
+          "index": "S30",
+          "service_site": "St Leonard's Police Station and Divisional Headquarters",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 3.54
+        },
+        {
+          "index": "S2",
+          "service_site": "Drylaw Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 3.78
+        },
+        {
+          "index": "S10",
+          "service_site": "Corstorphine Police Station",
+          "category": "police",
+          "capacity": 7,
+          "distance_km": 5.58
+        },
+        {
+          "index": "S13",
+          "service_site": "Wester Hailes Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 6.18
+        },
+        {
+          "index": "S9",
+          "service_site": "Oxgangs Police Station",
+          "category": "police",
+          "capacity": 6,
+          "distance_km": 6.51
+        },
+        {
+          "index": "S17",
+          "service_site": "Craigmillar Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 6.59
+        },
+        {
+          "index": "S22",
+          "service_site": "Howdenhall Police Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 7.41
+        }
+      ]
+    },
+    {
+      "id": "A8",
+      "lat": 55.941248597871315,
+      "lon": -3.1381139086644345,
+      "category": "fire",
+      "distances": [
+        {
+          "index": "S20",
+          "service_site": "Marionville Community Fire Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 2.69
+        },
+        {
+          "index": "S21",
+          "service_site": "Liberton Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 4.63
+        },
+        {
+          "index": "S16",
+          "service_site": "McDonald Road Community Fire & Ambulance Station",
+          "category": "fire",
+          "capacity": 4,
+          "distance_km": 5.2
+        },
+        {
+          "index": "S29",
+          "service_site": "Tollcross Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 6.91
+        },
+        {
+          "index": "S12",
+          "service_site": "Crewe Toll Fire Station",
+          "category": "fire",
+          "capacity": 2,
+          "distance_km": 9.06
+        },
+        {
+          "index": "S19",
+          "service_site": "Sighthill Community Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 12.46
+        }
+      ]
+    },
+    {
+      "id": "A9",
+      "lat": 55.95311651569908,
+      "lon": -3.268068136724622,
+      "category": "police",
+      "distances": [
+        {
+          "index": "S2",
+          "service_site": "Drylaw Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 2.9
+        },
+        {
+          "index": "S8",
+          "service_site": "Fettes Police Station",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 3.33
+        },
+        {
+          "index": "S18",
+          "service_site": "Unnamed Police Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 3.34
+        },
+        {
+          "index": "S3",
+          "service_site": "BTP Edinburgh Police Station",
+          "category": "police",
+          "capacity": 6,
+          "distance_km": 4.08
+        },
+        {
+          "index": "S1",
+          "service_site": "West End Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 4.11
+        },
+        {
+          "index": "S10",
+          "service_site": "Corstorphine Police Station",
+          "category": "police",
+          "capacity": 7,
+          "distance_km": 4.99
+        },
+        {
+          "index": "S28",
+          "service_site": "Gayfield Square Police Station",
+          "category": "police",
+          "capacity": 7,
+          "distance_km": 5.76
+        },
+        {
+          "index": "S13",
+          "service_site": "Wester Hailes Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 6.46
+        },
+        {
+          "index": "S30",
+          "service_site": "St Leonard's Police Station and Divisional Headquarters",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 7.02
+        },
+        {
+          "index": "S9",
+          "service_site": "Oxgangs Police Station",
+          "category": "police",
+          "capacity": 6,
+          "distance_km": 7.95
+        },
+        {
+          "index": "S17",
+          "service_site": "Craigmillar Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 10.07
+        },
+        {
+          "index": "S22",
+          "service_site": "Howdenhall Police Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 20.15
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "lat": 55.92381753615626,
+      "lon": -3.2689041000376435,
+      "category": "police",
+      "distances": [
+        {
+          "index": "S13",
+          "service_site": "Wester Hailes Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 0.99
+        },
+        {
+          "index": "S10",
+          "service_site": "Corstorphine Police Station",
+          "category": "police",
+          "capacity": 7,
+          "distance_km": 3.17
+        },
+        {
+          "index": "S9",
+          "service_site": "Oxgangs Police Station",
+          "category": "police",
+          "capacity": 6,
+          "distance_km": 4.28
+        },
+        {
+          "index": "S3",
+          "service_site": "BTP Edinburgh Police Station",
+          "category": "police",
+          "capacity": 6,
+          "distance_km": 5.16
+        },
+        {
+          "index": "S1",
+          "service_site": "West End Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 5.19
+        },
+        {
+          "index": "S8",
+          "service_site": "Fettes Police Station",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 7.0
+        },
+        {
+          "index": "S18",
+          "service_site": "Unnamed Police Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 7.01
+        },
+        {
+          "index": "S2",
+          "service_site": "Drylaw Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 7.61
+        },
+        {
+          "index": "S30",
+          "service_site": "St Leonard's Police Station and Divisional Headquarters",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 7.83
+        },
+        {
+          "index": "S28",
+          "service_site": "Gayfield Square Police Station",
+          "category": "police",
+          "capacity": 7,
+          "distance_km": 7.95
+        },
+        {
+          "index": "S17",
+          "service_site": "Craigmillar Police Station",
+          "category": "police",
+          "capacity": 5,
+          "distance_km": 9.71
+        },
+        {
+          "index": "S22",
+          "service_site": "Howdenhall Police Station",
+          "category": "police",
+          "capacity": 3,
+          "distance_km": 12.13
+        }
+      ]
+    }
+  ]
+}

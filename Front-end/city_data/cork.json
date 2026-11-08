@@ -1,0 +1,167 @@
+{
+  "name": "Cork",
+  "center": {
+    "lat": 51.8985,
+    "lon": -8.4756
+  },
+  "bounds": {
+    "lat_min": 51.85,
+    "lat_max": 51.95,
+    "lon_min": -8.55,
+    "lon_max": -8.4
+  },
+  "centers": [
+    {
+      "name": "South Infirmary-Victoria University Hospital",
+      "lat": 51.8935409,
+      "lon": -8.4641489,
+      "category": "hospital",
+      "index": "S1",
+      "capacity": 42
+    },
+    {
+      "name": "Unnamed Fire Station",
+      "lat": 51.8962257,
+      "lon": -8.4651121,
+      "category": "fire",
+      "index": "S2",
+      "capacity": 2
+    },
+    {
+      "name": "Saint Mary's Health Campus",
+      "lat": 51.9047514,
+      "lon": -8.49966,
+      "category": "hospital",
+      "index": "S3",
+      "capacity": 21
+    },
+    {
+      "name": "Saint Finbarr's Hospital",
+      "lat": 51.8875991,
+      "lon": -8.4610188,
+      "category": "hospital",
+      "index": "S4",
+      "capacity": 28
+    },
+    {
+      "name": "Bon Secours Hospital",
+      "lat": 51.8925233,
+      "lon": -8.4974258,
+      "category": "hospital",
+      "index": "S5",
+      "capacity": 13
+    },
+    {
+      "name": "Mater Private Cork",
+      "lat": 51.8863227,
+      "lon": -8.4059816,
+      "category": "hospital",
+      "index": "S6",
+      "capacity": 24
+    },
+    {
+      "name": "Cork University Hospital",
+      "lat": 51.8833458,
+      "lon": -8.5120707,
+      "category": "hospital",
+      "index": "S7",
+      "capacity": 21
+    },
+    {
+      "name": "Mayfield Garda Station",
+      "lat": 51.909661,
+      "lon": -8.4290095,
+      "category": "police",
+      "index": "S8",
+      "capacity": 3
+    },
+    {
+      "name": "Douglas Garda Station",
+      "lat": 51.875106,
+      "lon": -8.4309006,
+      "category": "police",
+      "index": "S9",
+      "capacity": 5
+    },
+    {
+      "name": "Mercy University Hospital",
+      "lat": 51.8989402,
+      "lon": -8.4824487,
+      "category": "hospital",
+      "index": "S10",
+      "capacity": 22
+    },
+    {
+      "name": "Blackrock Garda Station",
+      "lat": 51.8941902,
+      "lon": -8.4043957,
+      "category": "police",
+      "index": "S11",
+      "capacity": 6
+    },
+    {
+      "name": "Ballyvolane Fire Station",
+      "lat": 51.9150704,
+      "lon": -8.463716,
+      "category": "fire",
+      "index": "S12",
+      "capacity": 4
+    },
+    {
+      "name": "Togher Garda Station",
+      "lat": 51.8763522,
+      "lon": -8.4860704,
+      "category": "police",
+      "index": "S13",
+      "capacity": 8
+    },
+    {
+      "name": "Gurranabraher Garda Station",
+      "lat": 51.9035408,
+      "lon": -8.4966706,
+      "category": "police",
+      "index": "S14",
+      "capacity": 3
+    },
+    {
+      "name": "Bishopstown Garda Station",
+      "lat": 51.8806782,
+      "lon": -8.5145703,
+      "category": "police",
+      "index": "S15",
+      "capacity": 8
+    },
+    {
+      "name": "Bridewell Garda Station",
+      "lat": 51.9004479,
+      "lon": -8.477125,
+      "category": "police",
+      "index": "S16",
+      "capacity": 3
+    },
+    {
+      "name": "Anglesea Street Garda Station",
+      "lat": 51.8958593,
+      "lon": -8.4646136,
+      "category": "police",
+      "index": "S17",
+      "capacity": 3
+    },
+    {
+      "name": "Unnamed Police Station",
+      "lat": 51.8957816,
+      "lon": -8.4649461,
+      "category": "police",
+      "index": "S18",
+      "capacity": 3
+    },
+    {
+      "name": "Anglesea Street Fire Station",
+      "lat": 51.8962269,
+      "lon": -8.465152,
+      "category": "fire",
+      "index": "S19",
+      "capacity": 3
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+import folium
+
+CATEGORY_STYLE = {
+    "hospital": {"color": "red", "icon": "plus-sign", "prefix": "glyphicon"},
+    "fire": {"color": "orange", "icon": "fire", "prefix": "fa"},
+    "police": {"color": "cadetblue", "icon": "shield", "prefix": "fa"},
+}
+
+def distance_color(km, max_km=10):
+    ratio = min(km / max_km, 1.0)
+    red = int(255 * ratio)
+    green = int(255 * (1 - ratio))
+    return f"#{red:02x}{green:02x}00"
+
+def build_dispatch_map(centers, accidents, selected_accident_id,
+                        visible_categories, center, assignments=None, zoom=12):
+    assignments = assignments or {}
+
+    # --- TILES: swapped from default OSM to CartoDB positron ---
+    city_map = folium.Map(location=center, zoom_start=zoom, tiles="OpenStreetMap")
+    centers_by_index = {service_site["index"]: service_site for service_site in centers}
+
+    for c in centers:
+        if not visible_categories.get(c["category"], False):
+            continue
+
+        style = CATEGORY_STYLE.get(
+            c["category"], {"color": "gray", "icon": "info-sign", "prefix": "glyphicon"}
+        )
+        assigned = assignments.get(c["name"], 0)
+        marker_color = style["color"] if assigned > 0 else "lightgray"
+
+        folium.Marker(
+            location=[c["lat"], c["lon"]],
+            popup=f"{c['name']} ({c['category']})<br>Vehicles assigned: {assigned}",
+            tooltip=f"{c['name']} — {assigned} vehicle(s)",
+            icon=folium.Icon(color=marker_color, icon=style["icon"], prefix=style["prefix"]),
+        ).add_to(city_map)
+
+    for a in accidents:
+        is_selected = (a["id"] == selected_accident_id)
+
+        folium.Marker(
+            location=[a["lat"], a["lon"]],
+            popup=f"Accident {a['id']}",
+            icon=folium.Icon(color="purple" if is_selected else "blue", icon="info-sign"),
+        ).add_to(city_map)
+
+        if not is_selected:
+            continue
+
+        for i, d in enumerate(a["distances"]):
+            service_site = centers_by_index[d["index"]]
+            is_nearest = (i == 0)
+            folium.PolyLine(
+                locations=[
+                    [a["lat"], a["lon"]],
+                    [service_site["lat"], service_site["lon"]],
+                ],
+                color=distance_color(d["distance_km"]),
+                weight=5 if is_nearest else 3,
+                opacity=1.0 if is_nearest else 0.6,
+                tooltip=(
+                    f"{a['id']} → {service_site['name']}: "
+                    f"{d['distance_km']} km"
+                ),
+            ).add_to(city_map)
+
+
+
+
+    return city_map

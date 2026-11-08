@@ -1,0 +1,259 @@
+{
+  "incident_sites": [
+    {
+      "id": "A1",
+      "lat": 51.85250107552227,
+      "lon": 0.8775029318369119,
+      "category": "fire",
+      "distances": [
+        {
+          "index": "S7",
+          "service_site": "Colchester Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 7.23
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "lat": 51.87232107381488,
+      "lon": 0.9236471214164013,
+      "category": "police",
+      "distances": [
+        {
+          "index": "S3",
+          "service_site": "Colchester Police Station",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 3.1
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "lat": 51.917669948742294,
+      "lon": 0.9392179567704845,
+      "category": "hospital",
+      "distances": [
+        {
+          "index": "S8",
+          "service_site": "King's Wood Centre",
+          "category": "hospital",
+          "capacity": 15,
+          "distance_km": 3.9
+        },
+        {
+          "index": "S1",
+          "service_site": "Cygnet Hospital Colchester",
+          "category": "hospital",
+          "capacity": 28,
+          "distance_km": 4.16
+        },
+        {
+          "index": "S4",
+          "service_site": "Colchester General Hospital",
+          "category": "hospital",
+          "capacity": 57,
+          "distance_km": 4.38
+        },
+        {
+          "index": "S5",
+          "service_site": "St Aubyn Centre",
+          "category": "hospital",
+          "capacity": 27,
+          "distance_km": 5.23
+        },
+        {
+          "index": "S6",
+          "service_site": "Oaks Hospital",
+          "category": "hospital",
+          "capacity": 30,
+          "distance_km": 6.36
+        },
+        {
+          "index": "S2",
+          "service_site": "Chavasse V C House",
+          "category": "hospital",
+          "capacity": 30,
+          "distance_km": 7.9
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "lat": 51.858693883262944,
+      "lon": 0.892192181968527,
+      "category": "fire",
+      "distances": [
+        {
+          "index": "S7",
+          "service_site": "Colchester Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 6.83
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "lat": 51.85936952398616,
+      "lon": 0.8732660893390739,
+      "category": "hospital",
+      "distances": [
+        {
+          "index": "S2",
+          "service_site": "Chavasse V C House",
+          "category": "hospital",
+          "capacity": 30,
+          "distance_km": 2.84
+        },
+        {
+          "index": "S6",
+          "service_site": "Oaks Hospital",
+          "category": "hospital",
+          "capacity": 30,
+          "distance_km": 6.66
+        },
+        {
+          "index": "S4",
+          "service_site": "Colchester General Hospital",
+          "category": "hospital",
+          "capacity": 57,
+          "distance_km": 7.32
+        },
+        {
+          "index": "S8",
+          "service_site": "King's Wood Centre",
+          "category": "hospital",
+          "capacity": 15,
+          "distance_km": 7.43
+        },
+        {
+          "index": "S5",
+          "service_site": "St Aubyn Centre",
+          "category": "hospital",
+          "capacity": 27,
+          "distance_km": 8.58
+        },
+        {
+          "index": "S1",
+          "service_site": "Cygnet Hospital Colchester",
+          "category": "hospital",
+          "capacity": 28,
+          "distance_km": 9.51
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "lat": 51.85265359696839,
+      "lon": 0.8698837650686648,
+      "category": "hospital",
+      "distances": [
+        {
+          "index": "S2",
+          "service_site": "Chavasse V C House",
+          "category": "hospital",
+          "capacity": 30,
+          "distance_km": 3.41
+        },
+        {
+          "index": "S6",
+          "service_site": "Oaks Hospital",
+          "category": "hospital",
+          "capacity": 30,
+          "distance_km": 7.23
+        },
+        {
+          "index": "S4",
+          "service_site": "Colchester General Hospital",
+          "category": "hospital",
+          "capacity": 57,
+          "distance_km": 7.89
+        },
+        {
+          "index": "S8",
+          "service_site": "King's Wood Centre",
+          "category": "hospital",
+          "capacity": 15,
+          "distance_km": 7.99
+        },
+        {
+          "index": "S5",
+          "service_site": "St Aubyn Centre",
+          "category": "hospital",
+          "capacity": 27,
+          "distance_km": 9.15
+        },
+        {
+          "index": "S1",
+          "service_site": "Cygnet Hospital Colchester",
+          "category": "hospital",
+          "capacity": 28,
+          "distance_km": 16.04
+        }
+      ]
+    },
+    {
+      "id": "A7",
+      "lat": 51.92013249735903,
+      "lon": 0.8919519820961659,
+      "category": "police",
+      "distances": [
+        {
+          "index": "S3",
+          "service_site": "Colchester Police Station",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 4.54
+        }
+      ]
+    },
+    {
+      "id": "A8",
+      "lat": 51.90892656838759,
+      "lon": 0.9309430456677826,
+      "category": "fire",
+      "distances": [
+        {
+          "index": "S7",
+          "service_site": "Colchester Fire Station",
+          "category": "fire",
+          "capacity": 3,
+          "distance_km": 3.74
+        }
+      ]
+    },
+    {
+      "id": "A9",
+      "lat": 51.925880736712976,
+      "lon": 0.865965931637689,
+      "category": "police",
+      "distances": [
+        {
+          "index": "S3",
+          "service_site": "Colchester Police Station",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 6.74
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "lat": 51.884025051651804,
+      "lon": 0.8655479499811781,
+      "category": "police",
+      "distances": [
+        {
+          "index": "S3",
+          "service_site": "Colchester Police Station",
+          "category": "police",
+          "capacity": 4,
+          "distance_km": 2.93
+        }
+      ]
+    }
+  ]
+}

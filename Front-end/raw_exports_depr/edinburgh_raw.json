@@ -1,0 +1,593 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-07T19:05:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1951176079,
+  "lat": 55.9466681,
+  "lon": -3.2139844,
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "3-5",
+    "addr:street": "Torphichen Place",
+    "amenity": "police",
+    "name": "West End Police Station",
+    "operator": "Police Scotland",
+    "operator:wikidata": "Q7209499",
+    "source": "survey",
+    "website": "https://scotland.police.uk/",
+    "wikidata": "Q77775101"
+  }
+},
+{
+  "type": "node",
+  "id": 4347084634,
+  "lat": 55.9670307,
+  "lon": -3.2478086,
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "701",
+    "addr:street": "Ferry Road",
+    "amenity": "police",
+    "name": "Drylaw Police Station",
+    "phone": "+44 178 628 9070",
+    "source": "Bing",
+    "website": "https://www.scotland.police.uk/police-stations/edinburgh/150492/"
+  }
+},
+{
+  "type": "node",
+  "id": 5978433756,
+  "lat": 55.9464245,
+  "lon": -3.2139967,
+  "tags": {
+    "amenity": "police",
+    "name": "BTP Edinburgh Police Station",
+    "operator": "British Transport Police",
+    "operator:wikidata": "Q174588",
+    "website": "https://www.btp.police.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 4981914,
+  "center": {
+    "lat": 55.9287569,
+    "lon": -3.1978374
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "133",
+    "addr:postcode": "EH9 2HL",
+    "addr:street": "Grange Loan",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Astley Ainslie Hospital",
+    "phone": "+44 131 537 9000",
+    "source": "NLS_OS_Edinburgh_map_1940s;Bing",
+    "wikidata": "Q4810902",
+    "wikipedia": "en:Astley Ainslie Hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 5120232,
+  "center": {
+    "lat": 55.9437762,
+    "lon": -3.2640546
+  },
+  "tags": {
+    "amenity": "hospital",
+    "name": "Spire Murrayfield Hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 40733886,
+  "center": {
+    "lat": 55.9275212,
+    "lon": -3.2024259
+  },
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Woodburn House NHS"
+  }
+},
+{
+  "type": "way",
+  "id": 41676121,
+  "center": {
+    "lat": 55.9623853,
+    "lon": -3.2347813
+  },
+  "tags": {
+    "amenity": "hospital",
+    "description": "Minor Injuries Only",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "name": "Western General Hospital (Edinburgh)",
+    "wikidata": "Q7987867",
+    "wikipedia": "en:Western General Hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 61401330,
+  "center": {
+    "lat": 55.9605377,
+    "lon": -3.2255329
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "5",
+    "addr:postcode": "EH4 1RB",
+    "addr:street": "Fettes Avenue",
+    "amenity": "police",
+    "building": "police",
+    "name": "Fettes Police Station",
+    "operator": "Police Scotland",
+    "operator:wikidata": "Q7209499",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 75399536,
+  "center": {
+    "lat": 55.9076375,
+    "lon": -3.2280705
+  },
+  "tags": {
+    "amenity": "police",
+    "building": "yes",
+    "name": "Oxgangs Police Station",
+    "operator": "Police Scotland",
+    "operator:wikidata": "Q7209499",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 92552497,
+  "center": {
+    "lat": 55.9404662,
+    "lon": -3.2927628
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "amenity": "police",
+    "is_in": "Corstorphine, Edinburgh, Scotland, UK",
+    "name": "Corstorphine Police Station"
+  }
+},
+{
+  "type": "way",
+  "id": 93536102,
+  "center": {
+    "lat": 55.9221695,
+    "lon": -3.1345976
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "51",
+    "addr:postcode": "EH16 4SA",
+    "addr:street": "Little France Crescent",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "fhrs:id": "663220",
+    "healthcare": "hospital",
+    "healthcare:speciality": "emergency;surgery",
+    "name": "Royal Infirmary of Edinburgh (Little France)",
+    "operator": "NHS Lothian",
+    "operator:type": "public",
+    "start_date": "1729",
+    "wikidata": "Q3822734",
+    "wikipedia": "en:Royal Infirmary of Edinburgh"
+  }
+},
+{
+  "type": "way",
+  "id": 95644845,
+  "center": {
+    "lat": 55.9679911,
+    "lon": -3.2374950
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "223",
+    "addr:postcode": "EH4 2PW",
+    "addr:street": "Telford Road",
+    "amenity": "fire_station",
+    "check_date": "2025-08-14",
+    "fhrs:id": "663741",
+    "name": "Crewe Toll Fire Station"
+  }
+},
+{
+  "type": "way",
+  "id": 359963557,
+  "center": {
+    "lat": 55.9186036,
+    "lon": -3.2728675
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "49",
+    "addr:street": "Dumbryden Drive",
+    "amenity": "police",
+    "building": "yes",
+    "name": "Wester Hailes Police Station",
+    "source": "bing"
+  }
+},
+{
+  "type": "way",
+  "id": 496448221,
+  "center": {
+    "lat": 55.9275818,
+    "lon": -3.2182639
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:postcode": "EH10 5HF",
+    "addr:street": "Morningside Place",
+    "amenity": "hospital",
+    "emergency": "no",
+    "fhrs:id": "143187",
+    "healthcare": "hospital",
+    "healthcare:speciality": "psychiatry;psychology;mental_health",
+    "loc_name": "Royal Ed",
+    "name": "Royal Edinburgh Hospital",
+    "operator": "NHS Lothian",
+    "operator:type": "public",
+    "phone": "+44 131 537 6000",
+    "start_date": "1809",
+    "website": "https://www.nhslothian.scot/goingtohospital/royal-edinburgh-hospital/",
+    "wheelchair": "yes",
+    "wikidata": "Q7374135",
+    "wikipedia": "en:Royal Edinburgh Hospital"
+  }
+},
+{
+  "type": "way",
+  "id": 922197122,
+  "center": {
+    "lat": 55.9208958,
+    "lon": -3.1395955
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "50",
+    "addr:postcode": "EH16 4TJ",
+    "addr:street": "Little France Crescent",
+    "alt_name": "RHCYP",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "max_age": "18",
+    "name": "Royal Hospital for Children and Young People",
+    "operator": "NHS Lothian",
+    "website": "https://children.nhslothian.scot/the-rhcyp/"
+  }
+},
+{
+  "type": "way",
+  "id": 1021664775,
+  "center": {
+    "lat": 55.9638684,
+    "lon": -3.1844406
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:postcode": "EH7 4NS",
+    "addr:street": "McDonald Road",
+    "amenity": "fire_station",
+    "check_date": "2026-01-17",
+    "fhrs:id": "661600",
+    "name": "McDonald Road Community Fire & Ambulance Station",
+    "old_name": "McDonald Road Fire Station",
+    "operator": "Scottish Fire and Rescue Service",
+    "operator:wikidata": "Q7437729",
+    "source": "Bing;survey"
+  }
+},
+{
+  "type": "way",
+  "id": 1316010590,
+  "center": {
+    "lat": 55.9333274,
+    "lon": -3.1404148
+  },
+  "tags": {
+    "amenity": "police",
+    "name": "Craigmillar Police Station",
+    "name:sco": "Craigmillar Polis Station",
+    "operator": "Police Scotland",
+    "operator:wikidata": "Q7209499"
+  }
+},
+{
+  "type": "way",
+  "id": 1353911778,
+  "center": {
+    "lat": 55.9604795,
+    "lon": -3.2263285
+  },
+  "tags": {
+    "amenity": "police"
+  }
+},
+{
+  "type": "way",
+  "id": 1360688904,
+  "center": {
+    "lat": 55.9236946,
+    "lon": -3.2849215
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "376",
+    "addr:postcode": "EH11 4AT",
+    "addr:street": "Calder Road",
+    "amenity": "fire_station",
+    "fhrs:id": "662152",
+    "name": "Sighthill Community Fire Station",
+    "operator": "Scottish Fire and Rescue Service",
+    "operator:wikidata": "Q7437729"
+  }
+},
+{
+  "type": "way",
+  "id": 1373557457,
+  "center": {
+    "lat": 55.9574754,
+    "lon": -3.1501365
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "51",
+    "addr:postcode": "EH7 6BH",
+    "addr:street": "Marionville Drive",
+    "amenity": "fire_station",
+    "fhrs:id": "663740",
+    "name": "Marionville Community Fire Station",
+    "operator": "Scottish Fire and Rescue Service",
+    "operator:wikidata": "Q7437729",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 1384152364,
+  "center": {
+    "lat": 55.9190290,
+    "lon": -3.1650873
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:postcode": "EH16 6HH",
+    "addr:street": "Kirk Brae",
+    "amenity": "fire_station",
+    "landuse": "construction",
+    "name": "Liberton Fire Station",
+    "operator": "Scottish Fire and Rescue Service",
+    "operator:wikidata": "Q7437729"
+  }
+},
+{
+  "type": "way",
+  "id": 1384155562,
+  "center": {
+    "lat": 55.9043999,
+    "lon": -3.1649610
+  },
+  "tags": {
+    "amenity": "police",
+    "name": "Howdenhall Police Station",
+    "operator": "Police Scotland",
+    "operator:wikidata": "Q7209499"
+  }
+},
+{
+  "type": "way",
+  "id": 1396547033,
+  "center": {
+    "lat": 55.9094642,
+    "lon": -3.1494516
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "72",
+    "addr:postcode": "EH16 6FF",
+    "addr:street": "Carnbee Avenue",
+    "amenity": "hospital",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "healthcare:speciality": "geriatrics;psychiatry",
+    "name": "Ellen's Glen Community Hospital",
+    "operator": "NHS Lothian",
+    "operator:type": "public",
+    "phone": "+44 131 664 8664",
+    "source": "https://www.nhslothian.scot/goingtohospital/ellens-glen-house/",
+    "wikidata": "Q5364707",
+    "wikipedia": "en:Ellen's Glen House"
+  }
+},
+{
+  "type": "way",
+  "id": 1408706268,
+  "center": {
+    "lat": 55.9445195,
+    "lon": -3.1983556
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "2a",
+    "addr:postcode": "EH3 9HQ",
+    "addr:street": "Chalmers Street",
+    "amenity": "hospital",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "name": "Chalmers Centre",
+    "operator": "NHS Lothian",
+    "operator:type": "public",
+    "source": "Bing;survey",
+    "website": "https://www.nhslothian.scot/goingtohospital/chalmers/",
+    "wikidata": "Q48814992",
+    "wikipedia": "en:Chalmers Hospital, Edinburgh"
+  }
+},
+{
+  "type": "way",
+  "id": 1408952952,
+  "center": {
+    "lat": 55.9441200,
+    "lon": -3.1981965
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "28-38",
+    "addr:postcode": "EH3 9HA",
+    "addr:street": "Chalmers Street",
+    "amenity": "hospital",
+    "emergency": "no",
+    "fhrs:id": "71224;116846",
+    "healthcare": "hospital",
+    "healthcare:speciality": "ophthalmology",
+    "name": "Princess Alexandra Eye Pavilion",
+    "not:addr:postcode": "EH3 9ES",
+    "operator": "NHS Lothian",
+    "operator:type": "public",
+    "source": "Bing;survey",
+    "source:addr": "FHRS Open Data",
+    "website": "https://www.nhslothian.scot/goingtohospital/the-princess-alexandra-eye-pavilion/",
+    "wikidata": "Q7244518",
+    "wikipedia": "en:Princess Alexandra Eye Pavilion"
+  }
+},
+{
+  "type": "way",
+  "id": 1408952953,
+  "center": {
+    "lat": 55.9443708,
+    "lon": -3.1967679
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "41",
+    "addr:postcode": "EH3 9EN",
+    "addr:street": "Lauriston Place",
+    "amenity": "hospital",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "healthcare:speciality": "dentistry;dermatology",
+    "name": "Lauriston Building",
+    "operator": "NHS Lothian",
+    "operator:type": "public",
+    "website": "https://www.nhslothian.scot/goingtohospital/lauriston-building/",
+    "wikidata": "Q6501856",
+    "wikipedia": "en:Lauriston Building"
+  }
+},
+{
+  "type": "way",
+  "id": 1411852267,
+  "center": {
+    "lat": 55.9680261,
+    "lon": -3.1442661
+  },
+  "tags": {
+    "addr:postcode": "EH6 7LG",
+    "addr:street": "Seafield Street",
+    "amenity": "hospital",
+    "description": "continued care hospital with two wards (Fillyside for those with physical needs and Prospect Bank for those with dementia/alzheimers needs)",
+    "emergency": "no",
+    "fhrs:id": "661722",
+    "healthcare": "hospital",
+    "name": "Findlay House",
+    "operator": "NHS Lothian",
+    "operator:type": "public",
+    "phone": "+44 131 454 2200"
+  }
+},
+{
+  "type": "way",
+  "id": 1456782049,
+  "center": {
+    "lat": 55.9585989,
+    "lon": -3.1857381
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:housenumber": "2",
+    "addr:postcode": "EH1 3NW",
+    "addr:street": "Gayfield Square",
+    "alt_name": "Gayfield Police Office",
+    "amenity": "police",
+    "area": "yes",
+    "name": "Gayfield Square Police Station",
+    "name:gd": "Stèisean Poileis Cheàrnag Gayfield",
+    "operator": "Police Scotland",
+    "operator:wikidata": "Q7209499",
+    "phone": "+44 1786 289 070",
+    "phone:GB": "101",
+    "source": "survey",
+    "website": "https://www.scotland.police.uk/police-stations/edinburgh/214643/"
+  }
+},
+{
+  "type": "way",
+  "id": 1487330358,
+  "center": {
+    "lat": 55.9436795,
+    "lon": -3.2051381
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:street": "Ponton Street",
+    "amenity": "fire_station",
+    "name": "Tollcross Fire Station",
+    "operator": "Scottish Fire and Rescue Service",
+    "operator:wikidata": "Q7437729",
+    "phone": "+44 131 229 8274",
+    "source": "survey",
+    "website": "https://www.firescotland.gov.uk/your-area/east/local-stations/tollcross.aspx",
+    "wikidata": "Q124253516"
+  }
+},
+{
+  "type": "relation",
+  "id": 3897592,
+  "center": {
+    "lat": 55.9431625,
+    "lon": -3.1790247
+  },
+  "tags": {
+    "addr:city": "Edinburgh",
+    "addr:country": "GB",
+    "addr:housenumber": "14",
+    "addr:postcode": "EH8 9QW",
+    "addr:street": "St Leonard's Street",
+    "amenity": "police",
+    "building": "civic",
+    "building:levels": "3",
+    "building:material": "brick",
+    "fhrs:id": "137854",
+    "name": "St Leonard's Police Station and Divisional Headquarters",
+    "opening_hours": "24/7",
+    "roof:shape": "hipped",
+    "type": "multipolygon",
+    "website": "https://www.scotland.police.uk/police-stations/edinburgh-police-stations/",
+    "wheelchair": "yes"
+  }
+}
+
+  ]
+}
