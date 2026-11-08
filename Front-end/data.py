@@ -47,8 +47,8 @@ _geolocator = Nominatim(user_agent=HEADERS["User-Agent"])
 _geocode = RateLimiter(_geolocator.geocode, min_delay_seconds=1)
 
 
-def add_service_site_metadata(site):
-    """Assign a stable site ID and deterministic estimated incident capacity."""
+def add_service_site_metadata(site, site_number):
+    """Assign a per-city site ID and deterministic estimated incident capacity."""
     category = site["category"].strip().casefold()
     category = LEGACY_CATEGORY_MAP.get(category, category)
     if category not in {"hospital", "fire", "police"}:
@@ -61,8 +61,8 @@ def add_service_site_metadata(site):
         f"{float(site['lat']):.7f}",
         f"{float(site['lon']):.7f}",
     ))
-    site_id = hashlib.sha256(identity.encode("utf-8")).hexdigest()
-    site["index"] = site_id
+    identity_hash = hashlib.sha256(identity.encode("utf-8")).hexdigest()
+    site["index"] = f"S{site_number}"
 
     if "capacity" not in site:
         if category == "hospital":
@@ -76,7 +76,7 @@ def add_service_site_metadata(site):
             minimum, maximum = 2, 4
         elif category == "police":
             minimum, maximum = 3, 8
-        site["capacity"] = random.Random(int(site_id[:16], 16)).randint(
+        site["capacity"] = random.Random(int(identity_hash[:16], 16)).randint(
             minimum, maximum
         )
 
@@ -140,7 +140,7 @@ def _parse_osm_elements(elements):
             "lat": lat,
             "lon": lon,
             "category": category,
-        }))
+        }, site_number=len(centers) + 1))
 
     return centers
 

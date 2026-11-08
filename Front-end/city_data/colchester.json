@@ -16,7 +16,7 @@
       "lat": 51.9231053,
       "lon": 0.8920793,
       "category": "hospital",
-      "index": "5add9e8e682f1ff30503edae5d35f129af2d60eeffe305dd3d26a7905a357be3",
+      "index": "S1",
       "capacity": 28
     },
     {
@@ -24,7 +24,7 @@
       "lat": 51.8685989,
       "lon": 0.893388,
       "category": "hospital",
-      "index": "648d0a221e1f59635015690f018a1beef2a3cf0b6d0612013b355694b1e75f03",
+      "index": "S2",
       "capacity": 30
     },
     {
@@ -32,7 +32,7 @@
       "lat": 51.8862598,
       "lon": 0.8943425,
       "category": "police",
-      "index": "795cf0667901444820fde24970bf6b06f3936b3b171db74379e0649abd15e27f",
+      "index": "S3",
       "capacity": 4
     },
     {
@@ -40,7 +40,7 @@
       "lat": 51.9090022,
       "lon": 0.8997515,
       "category": "hospital",
-      "index": "c868f8293466f463242efdf69b00af3a80029b02065e0ad7d6ca56b9c266fd04",
+      "index": "S4",
       "capacity": 57
     },
     {
@@ -48,7 +48,7 @@
       "lat": 51.9185738,
       "lon": 0.8927168,
       "category": "hospital",
-      "index": "43af18bccdfcb6f52bc39450fea651c0b5322a35274780f0dc256ba9fa4f1840",
+      "index": "S5",
       "capacity": 27
     },
     {
@@ -56,7 +56,7 @@
       "lat": 51.9063079,
       "lon": 0.895291,
       "category": "hospital",
-      "index": "e870e6d0cba2c584b5a9c82a4534d1f5d82b556418d187a3f1a4ff355044edb3",
+      "index": "S6",
       "capacity": 30
     },
     {
@@ -64,7 +64,7 @@
       "lat": 51.8970379,
       "lon": 0.9016581,
       "category": "fire",
-      "index": "0ee31ac6f6b0e58b0d824875e6d8b2788edc7b9733cc6066c6f40cf223c2cbf4",
+      "index": "S7",
       "capacity": 3
     },
     {
@@ -72,7 +72,7 @@
       "lat": 51.9117859,
       "lon": 0.9014152,
       "category": "hospital",
-      "index": "943428c3518158759009735f462e255a21a5a2d885803b415de43be0659cdacf",
+      "index": "S8",
       "capacity": 15
     }
   ]

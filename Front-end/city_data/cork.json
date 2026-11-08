@@ -16,7 +16,7 @@
       "lat": 51.8935409,
       "lon": -8.4641489,
       "category": "hospital",
-      "index": "a45f5cb3de289187db41e2f73a7c6ca7240f7d2b6ad2cedfe781e992341cc425",
+      "index": "S1",
       "capacity": 42
     },
     {
@@ -24,7 +24,7 @@
       "lat": 51.8962257,
       "lon": -8.4651121,
       "category": "fire",
-      "index": "cf5c96ac11a698d90666a42f70eae58f53baa224d5f20b733938ac1bcbccc084",
+      "index": "S2",
       "capacity": 2
     },
     {
@@ -32,7 +32,7 @@
       "lat": 51.9047514,
       "lon": -8.49966,
       "category": "hospital",
-      "index": "cbf881f73be85a7eb4ab91cac1f7caaf84126e306975e6a0d6865b9b1bcb7ffd",
+      "index": "S3",
       "capacity": 21
     },
     {
@@ -40,7 +40,7 @@
       "lat": 51.8875991,
       "lon": -8.4610188,
       "category": "hospital",
-      "index": "78be7e7edb8a7cf78ca5741efb8d4081a34c832d931ac8e0c3566ff7f0d69861",
+      "index": "S4",
       "capacity": 28
     },
     {
@@ -48,7 +48,7 @@
       "lat": 51.8925233,
       "lon": -8.4974258,
       "category": "hospital",
-      "index": "eec8b3696401b18565f4f942901f5189eb41714143376bc4b08219fb65affb15",
+      "index": "S5",
       "capacity": 13
     },
     {
@@ -56,7 +56,7 @@
       "lat": 51.8863227,
       "lon": -8.4059816,
       "category": "hospital",
-      "index": "df3b227653458407fd8b0b5b03e42067b1ad67475b5ab2be9bfa84972f4e08b6",
+      "index": "S6",
       "capacity": 24
     },
     {
@@ -64,7 +64,7 @@
       "lat": 51.8833458,
       "lon": -8.5120707,
       "category": "hospital",
-      "index": "7901fd875a1cbb8235d9874d0bacdc2a0481c79a526056abcff4ae63db2c795a",
+      "index": "S7",
       "capacity": 21
     },
     {
@@ -72,7 +72,7 @@
       "lat": 51.909661,
       "lon": -8.4290095,
       "category": "police",
-      "index": "759fc7f4bae991364b98b955ebd2395f454caf696d42d1ce5b8e7f450af7b75f",
+      "index": "S8",
       "capacity": 3
     },
     {
@@ -80,7 +80,7 @@
       "lat": 51.875106,
       "lon": -8.4309006,
       "category": "police",
-      "index": "fad0736125a66578c1a54d60dcb40d80cae6be2dac50e76cc2bfa77850716c81",
+      "index": "S9",
       "capacity": 5
     },
     {
@@ -88,7 +88,7 @@
       "lat": 51.8989402,
       "lon": -8.4824487,
       "category": "hospital",
-      "index": "0215927c5e5d0d3f8543e183e9b7c2f53836939a597363b797a36685b7ad6618",
+      "index": "S10",
       "capacity": 22
     },
     {
@@ -96,7 +96,7 @@
       "lat": 51.8941902,
       "lon": -8.4043957,
       "category": "police",
-      "index": "00ba0fb8d34a24252588ff697a6ebbac559f9685e32d9c1db64b8ef26d2173d5",
+      "index": "S11",
       "capacity": 6
     },
     {
@@ -104,7 +104,7 @@
       "lat": 51.9150704,
       "lon": -8.463716,
       "category": "fire",
-      "index": "e2bdaab493a9a5d34b2e4ea8d41809cde71ab97fff136fa947985d1d0c2c206f",
+      "index": "S12",
       "capacity": 4
     },
     {
@@ -112,7 +112,7 @@
       "lat": 51.8763522,
       "lon": -8.4860704,
       "category": "police",
-      "index": "87e4fbdbe9f1c73fa684c9881a8249431217966f73661811b81dc7a99be4b971",
+      "index": "S13",
       "capacity": 8
     },
     {
@@ -120,7 +120,7 @@
       "lat": 51.9035408,
       "lon": -8.4966706,
       "category": "police",
-      "index": "a90d2edcea4370c48f7b1f07bee1d8065582659b1c556b630d8a378177b3233f",
+      "index": "S14",
       "capacity": 3
     },
     {
@@ -128,7 +128,7 @@
       "lat": 51.8806782,
       "lon": -8.5145703,
       "category": "police",
-      "index": "a7d33862d2fc9193ac97d9806d17c9859ef58cb943afc2e6593ffc270d49da84",
+      "index": "S15",
       "capacity": 8
     },
     {
@@ -136,7 +136,7 @@
       "lat": 51.9004479,
       "lon": -8.477125,
       "category": "police",
-      "index": "eb311a1fee2d72c7a70611750bd52b1be4342acb8bfbb30dc77024935578539a",
+      "index": "S16",
       "capacity": 3
     },
     {
@@ -144,7 +144,7 @@
       "lat": 51.8958593,
       "lon": -8.4646136,
       "category": "police",
-      "index": "e54bb11e31676eb5de43b94edd21bfe411303d1dc59065ca1f1185e4a8ced68a",
+      "index": "S17",
       "capacity": 3
     },
     {
@@ -152,7 +152,7 @@
       "lat": 51.8957816,
       "lon": -8.4649461,
       "category": "police",
-      "index": "275bd943733b69d93f7249008e638cd237b7aa32dcec43eea35a1cade8b88123",
+      "index": "S18",
       "capacity": 3
     },
     {
@@ -160,7 +160,7 @@
       "lat": 51.8962269,
       "lon": -8.465152,
       "category": "fire",
-      "index": "1ada1cf11da8819b28305a4a0680a2e827d4102a53ee34579a0b54c0b202894a",
+      "index": "S19",
       "capacity": 3
     }
   ]

@@ -29,8 +29,8 @@ def load_preloaded_cities():
             skipped.append((file.name, f"missing keys: {missing}"))
             continue
 
-        for center in data["centers"]:
-            add_service_site_metadata(center)
+        for site_number, center in enumerate(data["centers"], start=1):
+            add_service_site_metadata(center, site_number=site_number)
 
         cities[data["name"]] = data
 

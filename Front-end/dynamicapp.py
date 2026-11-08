@@ -19,7 +19,7 @@ st.set_page_config(
     layout="wide",
 )
 from auth import get_login_url, get_logout_url, get_current_user, logout
-
+N_INCIDENTS=10
 save_jsons = True
 user = get_current_user()
 
@@ -83,7 +83,7 @@ city_data = st.session_state.cities[city_name]
 
 all_centers = city_data["centers"]
 
-raw_accidents = generate_random_accidents(bounds=city_data["bounds"], n=5, seed=42)
+raw_accidents = generate_random_accidents(bounds=city_data["bounds"], n=N_INCIDENTS, seed=42)
 accidents = calculate_distances(all_centers, raw_accidents)
 if save_jsons:
     output_path = save_incident_data(city_data["name"], accidents)
