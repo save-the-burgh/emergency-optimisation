@@ -170,8 +170,8 @@ with distance_section.container():
 st.sidebar.header("Map Layers")
 visible_categories = {
     "hospital": st.sidebar.checkbox("Hospital", value=True),
-    "fire": st.sidebar.checkbox("fire", value=True),
-    "police": st.sidebar.checkbox("police", value=True),
+    "fire": st.sidebar.checkbox("Fire", value=True),
+    "police": st.sidebar.checkbox("Police", value=True),
 }
 
 st.subheader("Overview")
