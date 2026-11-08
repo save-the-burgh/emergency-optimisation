@@ -14,3 +14,11 @@ and coordinates. Capacities are deterministic simulation estimates in
 concurrent incidents: hospitals are assigned 12–30, larger hospitals 30–60,
 fire stations 2–4, and police stations 3–8. These are not verified
 operational capacities.
+
+The benchmark tab includes a fixed-capacity stress test comparing the LP with
+randomized-order nearest-first greedy assignment across 50 reproducible hotspot
+scenarios. It caps each site's incident capacity at two and uses up to 20
+incidents per scenario (fewer where the city's combined capacity is lower).
+These stress-test distances are straight-line estimates; the regular benchmark
+uses routed distances. Treat the stress test as a controlled demonstration,
+not as a forecast of real-world response performance.

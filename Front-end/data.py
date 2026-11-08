@@ -203,7 +203,7 @@ def save_incident_data(city_name, incidents):
     if not filename:
         raise ValueError("city_name must contain at least one valid filename character")
 
-    output_path = Path(__file__).parent / "incidence_data" / f"{filename}.json"
+    output_path = Path(__file__).parent / "incidence_data" / f"{filename.lower()}.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(
         json.dumps({"incident_sites": incidents}, indent=2),
@@ -240,7 +240,7 @@ def calculate_distances(service_sites, accidents):
             km = routes[0]["distance"] / 1000
             distances.append({
                 "index": site["index"],
-                "service_site": site["name"],
+                "name": site["name"],
                 "category": category,
                 "capacity": site["capacity"],
                 "distance_km": round(km, 2),

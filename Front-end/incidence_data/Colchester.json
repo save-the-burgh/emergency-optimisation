@@ -8,7 +8,7 @@
       "distances": [
         {
           "index": "S7",
-          "service_site": "Colchester Fire Station",
+          "name": "Colchester Fire Station",
           "category": "fire",
           "capacity": 3,
           "distance_km": 7.23
@@ -23,7 +23,7 @@
       "distances": [
         {
           "index": "S3",
-          "service_site": "Colchester Police Station",
+          "name": "Colchester Police Station",
           "category": "police",
           "capacity": 4,
           "distance_km": 3.1
@@ -38,42 +38,42 @@
       "distances": [
         {
           "index": "S8",
-          "service_site": "King's Wood Centre",
+          "name": "King's Wood Centre",
           "category": "hospital",
           "capacity": 15,
           "distance_km": 3.9
         },
         {
           "index": "S1",
-          "service_site": "Cygnet Hospital Colchester",
+          "name": "Cygnet Hospital Colchester",
           "category": "hospital",
           "capacity": 28,
           "distance_km": 4.16
         },
         {
           "index": "S4",
-          "service_site": "Colchester General Hospital",
+          "name": "Colchester General Hospital",
           "category": "hospital",
           "capacity": 57,
           "distance_km": 4.38
         },
         {
           "index": "S5",
-          "service_site": "St Aubyn Centre",
+          "name": "St Aubyn Centre",
           "category": "hospital",
           "capacity": 27,
           "distance_km": 5.23
         },
         {
           "index": "S6",
-          "service_site": "Oaks Hospital",
+          "name": "Oaks Hospital",
           "category": "hospital",
           "capacity": 30,
           "distance_km": 6.36
         },
         {
           "index": "S2",
-          "service_site": "Chavasse V C House",
+          "name": "Chavasse V C House",
           "category": "hospital",
           "capacity": 30,
           "distance_km": 7.9
@@ -88,7 +88,7 @@
       "distances": [
         {
           "index": "S7",
-          "service_site": "Colchester Fire Station",
+          "name": "Colchester Fire Station",
           "category": "fire",
           "capacity": 3,
           "distance_km": 6.83
@@ -103,42 +103,42 @@
       "distances": [
         {
           "index": "S2",
-          "service_site": "Chavasse V C House",
+          "name": "Chavasse V C House",
           "category": "hospital",
           "capacity": 30,
           "distance_km": 2.84
         },
         {
           "index": "S6",
-          "service_site": "Oaks Hospital",
+          "name": "Oaks Hospital",
           "category": "hospital",
           "capacity": 30,
           "distance_km": 6.66
         },
         {
           "index": "S4",
-          "service_site": "Colchester General Hospital",
+          "name": "Colchester General Hospital",
           "category": "hospital",
           "capacity": 57,
           "distance_km": 7.32
         },
         {
           "index": "S8",
-          "service_site": "King's Wood Centre",
+          "name": "King's Wood Centre",
           "category": "hospital",
           "capacity": 15,
           "distance_km": 7.43
         },
         {
           "index": "S5",
-          "service_site": "St Aubyn Centre",
+          "name": "St Aubyn Centre",
           "category": "hospital",
           "capacity": 27,
           "distance_km": 8.58
         },
         {
           "index": "S1",
-          "service_site": "Cygnet Hospital Colchester",
+          "name": "Cygnet Hospital Colchester",
           "category": "hospital",
           "capacity": 28,
           "distance_km": 9.51
@@ -153,42 +153,42 @@
       "distances": [
         {
           "index": "S2",
-          "service_site": "Chavasse V C House",
+          "name": "Chavasse V C House",
           "category": "hospital",
           "capacity": 30,
           "distance_km": 3.41
         },
         {
           "index": "S6",
-          "service_site": "Oaks Hospital",
+          "name": "Oaks Hospital",
           "category": "hospital",
           "capacity": 30,
           "distance_km": 7.23
         },
         {
           "index": "S4",
-          "service_site": "Colchester General Hospital",
+          "name": "Colchester General Hospital",
           "category": "hospital",
           "capacity": 57,
           "distance_km": 7.89
         },
         {
           "index": "S8",
-          "service_site": "King's Wood Centre",
+          "name": "King's Wood Centre",
           "category": "hospital",
           "capacity": 15,
           "distance_km": 7.99
         },
         {
           "index": "S5",
-          "service_site": "St Aubyn Centre",
+          "name": "St Aubyn Centre",
           "category": "hospital",
           "capacity": 27,
           "distance_km": 9.15
         },
         {
           "index": "S1",
-          "service_site": "Cygnet Hospital Colchester",
+          "name": "Cygnet Hospital Colchester",
           "category": "hospital",
           "capacity": 28,
           "distance_km": 16.04
@@ -203,7 +203,7 @@
       "distances": [
         {
           "index": "S3",
-          "service_site": "Colchester Police Station",
+          "name": "Colchester Police Station",
           "category": "police",
           "capacity": 4,
           "distance_km": 4.54
@@ -218,7 +218,7 @@
       "distances": [
         {
           "index": "S7",
-          "service_site": "Colchester Fire Station",
+          "name": "Colchester Fire Station",
           "category": "fire",
           "capacity": 3,
           "distance_km": 3.74
@@ -233,7 +233,7 @@
       "distances": [
         {
           "index": "S3",
-          "service_site": "Colchester Police Station",
+          "name": "Colchester Police Station",
           "category": "police",
           "capacity": 4,
           "distance_km": 6.74
@@ -248,7 +248,7 @@
       "distances": [
         {
           "index": "S3",
-          "service_site": "Colchester Police Station",
+          "name": "Colchester Police Station",
           "category": "police",
           "capacity": 4,
           "distance_km": 2.93
