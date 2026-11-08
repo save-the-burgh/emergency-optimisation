@@ -1,60 +1,104 @@
+import math
 import random
 
+import numpy as np
+from scipy.optimize import Bounds, LinearConstraint, milp
 
-def optimize_assignments(centers, total_vehicles, capacities, historical_accidents=None):
-    """
-    PLACEHOLDER optimizer.
 
-    Currently: guarantees at least 1 vehicle per center (capacity/pool
-    permitting), then randomly distributes any remaining vehicles,
-    never exceeding each center's capacity.
-
-    `historical_accidents` is accepted but unused for now — the real
-    optimizer will use it to weight assignments toward high-demand
-    centers instead of choosing randomly. Keep this parameter when you
-    swap in the real logic, so app.py doesn't need to change.
-
-    Args:
-        centers: list of dicts with 'name' — ONE category only
-        total_vehicles: int, number of vehicles available to distribute
-        capacities: dict mapping center name -> max vehicles allowed there
-        historical_accidents: unused placeholder for the real optimizer
-
-    Returns:
-        dict mapping center name -> assigned vehicle count.
-        Sum of values may be LESS than total_vehicles if total capacity
-        is smaller than total_vehicles. Some centers may get 0 if
-        total_vehicles is smaller than the number of centers.
-    """
-    names = [c["name"] for c in centers]
+def random_assignments(centers, total_vehicles, capacities, seed=None):
+    """Randomly distribute vehicles without exceeding a center's capacity."""
+    names = [center["name"] for center in centers]
     if not names:
         return {}
+    if total_vehicles < 0:
+        raise ValueError("total_vehicles cannot be negative")
 
-    remaining_capacity = {name: capacities.get(name, total_vehicles) for name in names}
-    assignment = {name: 0 for name in names}
-    pool = total_vehicles
+    remaining_capacity = {
+        name: max(0, int(capacities.get(name, total_vehicles))) for name in names
+    }
+    assignments = {name: 0 for name in names}
+    pool = min(int(total_vehicles), sum(remaining_capacity.values()))
+    rng = random.Random(seed)
 
-    # --- Step 1: guarantee at least 1 vehicle per center, where possible ---
-    # Shuffle order so the same centers aren't always favored when the
-    # pool runs out before every center gets its minimum.
     minimum_order = [name for name in names if remaining_capacity[name] > 0]
-    random.shuffle(minimum_order)
-
+    rng.shuffle(minimum_order)
     for name in minimum_order:
-        if pool <= 0:
+        if pool == 0:
             break
-        assignment[name] += 1
+        assignments[name] += 1
         remaining_capacity[name] -= 1
         pool -= 1
 
-    # --- Step 2: randomly distribute any leftover vehicles ---
     available = [name for name in names if remaining_capacity[name] > 0]
-    while pool > 0 and available:
-        choice = random.choice(available)
-        assignment[choice] += 1
-        remaining_capacity[choice] -= 1
+    while pool and available:
+        name = rng.choice(available)
+        assignments[name] += 1
+        remaining_capacity[name] -= 1
         pool -= 1
-        if remaining_capacity[choice] <= 0:
-            available.remove(choice)
+        if remaining_capacity[name] == 0:
+            available.remove(name)
 
-    return assignment
+    return assignments
+
+
+def optimize_assignments(centers, total_vehicles, capacities, historical_accidents=None):
+    """Allocate vehicles to maximize diminishing returns from nearby incidents."""
+    names = [center["name"] for center in centers]
+    if not names:
+        return {}
+    if total_vehicles < 0:
+        raise ValueError("total_vehicles cannot be negative")
+
+    site_by_index = {center.get("index"): center["name"] for center in centers}
+    capacity_by_name = {
+        name: max(0, int(capacities.get(name, total_vehicles))) for name in names
+    }
+    assignments = {name: 0 for name in names}
+    slots = []
+    benefits = []
+    demand = {name: 0.0 for name in names}
+
+    for accident in historical_accidents or []:
+        distances = accident.get("distances", [])
+        weights = []
+        for distance in distances:
+            name = site_by_index.get(distance.get("index"), distance.get("name"))
+            if name in demand:
+                weights.append((name, 1.0 / (1.0 + float(distance["distance_km"]))))
+        total_weight = sum(weight for _, weight in weights)
+        if total_weight:
+            for name, weight in weights:
+                demand[name] += weight / total_weight
+
+    if not any(demand.values()):
+        demand = {name: 1.0 for name in names}
+    else:
+        baseline = max(demand.values()) * 1e-6
+        demand = {name: score + baseline for name, score in demand.items()}
+
+    for name in names:
+        for unit in range(1, capacity_by_name[name] + 1):
+            slots.append(name)
+            benefits.append(demand[name] / math.sqrt(unit))
+
+    vehicle_count = min(int(total_vehicles), len(slots))
+    if vehicle_count == 0:
+        return assignments
+
+    result = milp(
+        c=-np.asarray(benefits),
+        integrality=np.ones(len(slots), dtype=int),
+        bounds=Bounds(np.zeros(len(slots)), np.ones(len(slots))),
+        constraints=LinearConstraint(
+            np.ones((1, len(slots))),
+            np.array([vehicle_count]),
+            np.array([vehicle_count]),
+        ),
+    )
+    if not result.success or result.x is None:
+        raise RuntimeError(f"Vehicle allocation optimization failed: {result.message}")
+
+    for index, name in enumerate(slots):
+        if result.x[index] > 0.5:
+            assignments[name] += 1
+    return assignments
